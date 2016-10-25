@@ -1,0 +1,9 @@
+c:\users\burcuoz\documents\visual studio 2015\Projects\SPLEModeLUpdateTool\SPLEModeLUpdateTool\bin\Debug\SPLEModeLUpdateTool.exe.config
+c:\users\burcuoz\documents\visual studio 2015\Projects\SPLEModeLUpdateTool\SPLEModeLUpdateTool\bin\Debug\SPLEModeLUpdateTool.exe
+c:\users\burcuoz\documents\visual studio 2015\Projects\SPLEModeLUpdateTool\SPLEModeLUpdateTool\bin\Debug\SPLEModeLUpdateTool.pdb
+c:\users\burcuoz\documents\visual studio 2015\Projects\SPLEModeLUpdateTool\SPLEModeLUpdateTool\obj\Debug\SPLEModeLUpdateTool.csprojResolveAssemblyReference.cache
+c:\users\burcuoz\documents\visual studio 2015\Projects\SPLEModeLUpdateTool\SPLEModeLUpdateTool\obj\Debug\SPLEModeLUpdateTool.Form1.resources
+c:\users\burcuoz\documents\visual studio 2015\Projects\SPLEModeLUpdateTool\SPLEModeLUpdateTool\obj\Debug\SPLEModeLUpdateTool.Properties.Resources.resources
+c:\users\burcuoz\documents\visual studio 2015\Projects\SPLEModeLUpdateTool\SPLEModeLUpdateTool\obj\Debug\SPLEModeLUpdateTool.csproj.GenerateResource.Cache
+c:\users\burcuoz\documents\visual studio 2015\Projects\SPLEModeLUpdateTool\SPLEModeLUpdateTool\obj\Debug\SPLEModeLUpdateTool.exe
+c:\users\burcuoz\documents\visual studio 2015\Projects\SPLEModeLUpdateTool\SPLEModeLUpdateTool\obj\Debug\SPLEModeLUpdateTool.pdb
