@@ -42,5 +42,17 @@ namespace SPLEModeLUpdateTool
                 openmodel_tb.Text = modelFolderBrowserDialog.SelectedPath;
             }
         }
+
+        private void chkfeaturetree_bttn_Click(object sender, EventArgs e)
+        {
+            int a = 1;
+           
+            foreach (string item in FileProcess.readFeature(openfeaturemodel_tb.Text))
+            {
+                feature_list_rtb.AppendText(a+". feature -> "+item+"\n");
+                a++;
+            }
+           
+        }
     }
 }

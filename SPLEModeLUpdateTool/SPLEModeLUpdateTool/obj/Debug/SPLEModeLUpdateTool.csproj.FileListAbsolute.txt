@@ -7,3 +7,12 @@ c:\users\burcuoz\documents\visual studio 2015\Projects\SPLEModeLUpdateTool\SPLEM
 c:\users\burcuoz\documents\visual studio 2015\Projects\SPLEModeLUpdateTool\SPLEModeLUpdateTool\obj\Debug\SPLEModeLUpdateTool.csproj.GenerateResource.Cache
 c:\users\burcuoz\documents\visual studio 2015\Projects\SPLEModeLUpdateTool\SPLEModeLUpdateTool\obj\Debug\SPLEModeLUpdateTool.exe
 c:\users\burcuoz\documents\visual studio 2015\Projects\SPLEModeLUpdateTool\SPLEModeLUpdateTool\obj\Debug\SPLEModeLUpdateTool.pdb
+C:\Users\burcuoz\Documents\GitHub\CS576\CS576-Agile-Software-Development\SPLEModeLUpdateTool\SPLEModeLUpdateTool\bin\Debug\SPLEModeLUpdateTool.exe.config
+C:\Users\burcuoz\Documents\GitHub\CS576\CS576-Agile-Software-Development\SPLEModeLUpdateTool\SPLEModeLUpdateTool\obj\Debug\SPLEModeLUpdateTool.exe
+C:\Users\burcuoz\Documents\GitHub\CS576\CS576-Agile-Software-Development\SPLEModeLUpdateTool\SPLEModeLUpdateTool\obj\Debug\SPLEModeLUpdateTool.pdb
+C:\Users\burcuoz\Documents\GitHub\CS576\CS576-Agile-Software-Development\SPLEModeLUpdateTool\SPLEModeLUpdateTool\bin\Debug\SPLEModeLUpdateTool.exe
+C:\Users\burcuoz\Documents\GitHub\CS576\CS576-Agile-Software-Development\SPLEModeLUpdateTool\SPLEModeLUpdateTool\bin\Debug\SPLEModeLUpdateTool.pdb
+C:\Users\burcuoz\Documents\GitHub\CS576\CS576-Agile-Software-Development\SPLEModeLUpdateTool\SPLEModeLUpdateTool\obj\Debug\SPLEModeLUpdateTool.csprojResolveAssemblyReference.cache
+C:\Users\burcuoz\Documents\GitHub\CS576\CS576-Agile-Software-Development\SPLEModeLUpdateTool\SPLEModeLUpdateTool\obj\Debug\SPLEModeLUpdateTool.Form1.resources
+C:\Users\burcuoz\Documents\GitHub\CS576\CS576-Agile-Software-Development\SPLEModeLUpdateTool\SPLEModeLUpdateTool\obj\Debug\SPLEModeLUpdateTool.Properties.Resources.resources
+C:\Users\burcuoz\Documents\GitHub\CS576\CS576-Agile-Software-Development\SPLEModeLUpdateTool\SPLEModeLUpdateTool\obj\Debug\SPLEModeLUpdateTool.csproj.GenerateResource.Cache

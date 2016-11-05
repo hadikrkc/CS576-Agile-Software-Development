@@ -38,6 +38,7 @@
             this.updatemodel_bttn = new System.Windows.Forms.Button();
             this.chkfeaturetree_bttn = new System.Windows.Forms.Button();
             this.modelupdate_lbl = new System.Windows.Forms.Label();
+            this.feature_list_rtb = new System.Windows.Forms.RichTextBox();
             this.SuspendLayout();
             // 
             // openfeaturemodel_tb
@@ -94,7 +95,7 @@
             // 
             // updatemodel_bttn
             // 
-            this.updatemodel_bttn.Location = new System.Drawing.Point(65, 191);
+            this.updatemodel_bttn.Location = new System.Drawing.Point(468, 292);
             this.updatemodel_bttn.Name = "updatemodel_bttn";
             this.updatemodel_bttn.Size = new System.Drawing.Size(138, 44);
             this.updatemodel_bttn.TabIndex = 6;
@@ -109,21 +110,31 @@
             this.chkfeaturetree_bttn.TabIndex = 7;
             this.chkfeaturetree_bttn.Text = "CHECK FETURE TREE";
             this.chkfeaturetree_bttn.UseVisualStyleBackColor = true;
+            this.chkfeaturetree_bttn.Click += new System.EventHandler(this.chkfeaturetree_bttn_Click);
             // 
             // modelupdate_lbl
             // 
             this.modelupdate_lbl.AutoSize = true;
-            this.modelupdate_lbl.Location = new System.Drawing.Point(49, 261);
+            this.modelupdate_lbl.Location = new System.Drawing.Point(474, 349);
             this.modelupdate_lbl.Name = "modelupdate_lbl";
             this.modelupdate_lbl.Size = new System.Drawing.Size(35, 13);
             this.modelupdate_lbl.TabIndex = 8;
             this.modelupdate_lbl.Text = "label1";
             // 
+            // feature_list_rtb
+            // 
+            this.feature_list_rtb.Location = new System.Drawing.Point(20, 183);
+            this.feature_list_rtb.Name = "feature_list_rtb";
+            this.feature_list_rtb.Size = new System.Drawing.Size(406, 186);
+            this.feature_list_rtb.TabIndex = 9;
+            this.feature_list_rtb.Text = "";
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(315, 325);
+            this.ClientSize = new System.Drawing.Size(618, 381);
+            this.Controls.Add(this.feature_list_rtb);
             this.Controls.Add(this.modelupdate_lbl);
             this.Controls.Add(this.chkfeaturetree_bttn);
             this.Controls.Add(this.updatemodel_bttn);
@@ -151,6 +162,7 @@
         private System.Windows.Forms.Button updatemodel_bttn;
         private System.Windows.Forms.Button chkfeaturetree_bttn;
         private System.Windows.Forms.Label modelupdate_lbl;
+        private System.Windows.Forms.RichTextBox feature_list_rtb;
     }
 }
 
