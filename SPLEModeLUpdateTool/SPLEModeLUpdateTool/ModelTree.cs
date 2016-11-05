@@ -11,5 +11,6 @@ namespace SPLEModeLUpdateTool
         private string parent;
         private List<string> child = new List<string>();
         private int value;
+        private int hadi;
     }
 }
