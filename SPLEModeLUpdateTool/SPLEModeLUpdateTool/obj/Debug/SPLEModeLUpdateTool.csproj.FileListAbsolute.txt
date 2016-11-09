@@ -28,3 +28,12 @@ C:\Users\burcuoz\Documents\GitHub\CS576-Agile-Software-Development\CS576-Agile-S
 C:\Users\burcuoz\Documents\GitHub\CS576-Agile-Software-Development\CS576-Agile-Software-Development\SPLEModeLUpdateTool\SPLEModeLUpdateTool\obj\Debug\SPLEModeLUpdateTool.Form1.resources
 C:\Users\burcuoz\Documents\GitHub\CS576-Agile-Software-Development\CS576-Agile-Software-Development\SPLEModeLUpdateTool\SPLEModeLUpdateTool\obj\Debug\SPLEModeLUpdateTool.Properties.Resources.resources
 C:\Users\burcuoz\Documents\GitHub\CS576-Agile-Software-Development\CS576-Agile-Software-Development\SPLEModeLUpdateTool\SPLEModeLUpdateTool\obj\Debug\SPLEModeLUpdateTool.csproj.GenerateResource.Cache
+C:\Users\DVTEST\Desktop\agile\CS576-Agile-Software-Development\SPLEModeLUpdateTool\SPLEModeLUpdateTool\bin\Debug\SPLEModeLUpdateTool.exe.config
+C:\Users\DVTEST\Desktop\agile\CS576-Agile-Software-Development\SPLEModeLUpdateTool\SPLEModeLUpdateTool\obj\Debug\SPLEModeLUpdateTool.exe
+C:\Users\DVTEST\Desktop\agile\CS576-Agile-Software-Development\SPLEModeLUpdateTool\SPLEModeLUpdateTool\obj\Debug\SPLEModeLUpdateTool.pdb
+C:\Users\DVTEST\Desktop\agile\CS576-Agile-Software-Development\SPLEModeLUpdateTool\SPLEModeLUpdateTool\bin\Debug\SPLEModeLUpdateTool.exe
+C:\Users\DVTEST\Desktop\agile\CS576-Agile-Software-Development\SPLEModeLUpdateTool\SPLEModeLUpdateTool\bin\Debug\SPLEModeLUpdateTool.pdb
+C:\Users\DVTEST\Desktop\agile\CS576-Agile-Software-Development\SPLEModeLUpdateTool\SPLEModeLUpdateTool\obj\Debug\SPLEModeLUpdateTool.csprojResolveAssemblyReference.cache
+C:\Users\DVTEST\Desktop\agile\CS576-Agile-Software-Development\SPLEModeLUpdateTool\SPLEModeLUpdateTool\obj\Debug\SPLEModeLUpdateTool.Form1.resources
+C:\Users\DVTEST\Desktop\agile\CS576-Agile-Software-Development\SPLEModeLUpdateTool\SPLEModeLUpdateTool\obj\Debug\SPLEModeLUpdateTool.Properties.Resources.resources
+C:\Users\DVTEST\Desktop\agile\CS576-Agile-Software-Development\SPLEModeLUpdateTool\SPLEModeLUpdateTool\obj\Debug\SPLEModeLUpdateTool.csproj.GenerateResource.Cache
