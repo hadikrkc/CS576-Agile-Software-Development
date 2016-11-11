@@ -59,7 +59,11 @@ namespace SPLEModeLUpdateTool
         {
             foreach (ModelTree item in ModelUpdate.CreateModelTree())
             {
-                modeltreeshow_rtb.AppendText(item.parent.ToString().ToUpper()+" =>  child_value: "+item.childvalue.ToString()+"\n");
+                modeltreeshow_rtb.AppendText(item.parent.ToString().ToUpper() + "\n");
+                foreach (var child in item.childs)
+                {
+                    modeltreeshow_rtb.AppendText("  --"+ child.ToString().ToUpper() + " =>  child_value: " + item.childvalue.ToString() + "\n");
+                 }
             }
            
             
