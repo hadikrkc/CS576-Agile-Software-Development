@@ -13,9 +13,10 @@ namespace SPLEModeLUpdateTool
         public static List<ModelTree> CreateModelTree()
         {
             List<ModelTree> model_tree_class = new List<ModelTree>();
-            string[] text = File.ReadAllLines("C:\\txtfolder\\model_subtree.txt");
+            string[] text = File.ReadAllLines("txtfolder\\model_subtree.txt");
             string[] parent_child;
             string[] childs_arr;
+            double childvalue_;
             foreach (string line in text)
             {
                 // Parent and child seperate
@@ -23,8 +24,9 @@ namespace SPLEModeLUpdateTool
                 // parent_child[1] => child array
                 parent_child = line.Split(':');
                 childs_arr = parent_child[1].Split(',');
+                childvalue_ = 1 / Convert.ToDouble(childs_arr.Length);
                 //lstemail.Add("JOhn", "Smith", "Los Angeles");
-                model_tree_class.Add(new ModelTree { parent = parent_child[0], childs = childs_arr, childvalue = 1 / childs_arr.Length });
+                model_tree_class.Add(new ModelTree { parent = parent_child[0], childs = childs_arr, childvalue = childvalue_ });
 
             }
             return model_tree_class;

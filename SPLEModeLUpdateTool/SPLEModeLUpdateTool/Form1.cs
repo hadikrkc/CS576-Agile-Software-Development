@@ -54,5 +54,15 @@ namespace SPLEModeLUpdateTool
             }
            
         }
+
+        private void updatemodel_bttn_Click(object sender, EventArgs e)
+        {
+            foreach (ModelTree item in ModelUpdate.CreateModelTree())
+            {
+                modeltreeshow_rtb.AppendText(item.parent.ToString().ToUpper()+" =>  child_value: "+item.childvalue.ToString()+"\n");
+            }
+           
+            
+        }
     }
 }

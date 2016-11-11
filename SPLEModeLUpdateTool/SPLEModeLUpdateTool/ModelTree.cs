@@ -9,8 +9,8 @@ namespace SPLEModeLUpdateTool
     class ModelTree
     {
         public string parent { set; get; }
-        public string[] child { set; get; }
-        public int childvalue { set; get; }
+        public string[] childs { set; get; }
+        public double childvalue { set; get; }
 
     }
 
