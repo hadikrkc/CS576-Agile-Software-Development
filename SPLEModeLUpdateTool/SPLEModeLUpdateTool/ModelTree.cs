@@ -8,9 +8,10 @@ namespace SPLEModeLUpdateTool
 {
     class ModelTree
     {
-        private string parent;
-        private List<string> child = new List<string>();
-        private int value;
-        private int hadi;
+        public string parent { set; get; }
+        public string[] child { set; get; }
+        public int childvalue { set; get; }
+
     }
+
 }
