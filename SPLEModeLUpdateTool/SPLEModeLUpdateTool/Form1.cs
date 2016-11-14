@@ -69,5 +69,11 @@ namespace SPLEModeLUpdateTool
            
             
         }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            McmParser Xmlpars = new McmParser("C:\\Users\\huseyinor\\Desktop\\SPLE", "SmartTV.mcm");
+            Xmlpars.XmlParsing();
+        }
     }
 }

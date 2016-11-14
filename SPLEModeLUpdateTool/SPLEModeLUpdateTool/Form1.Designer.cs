@@ -40,6 +40,7 @@
             this.modelupdate_lbl = new System.Windows.Forms.Label();
             this.feature_list_rtb = new System.Windows.Forms.RichTextBox();
             this.modeltreeshow_rtb = new System.Windows.Forms.RichTextBox();
+            this.button1 = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // openfeaturemodel_tb
@@ -139,11 +140,22 @@
             this.modeltreeshow_rtb.TabIndex = 10;
             this.modeltreeshow_rtb.Text = "";
             // 
+            // button1
+            // 
+            this.button1.Location = new System.Drawing.Point(407, 79);
+            this.button1.Name = "button1";
+            this.button1.Size = new System.Drawing.Size(75, 23);
+            this.button1.TabIndex = 11;
+            this.button1.Text = "button1";
+            this.button1.UseVisualStyleBackColor = true;
+            this.button1.Click += new System.EventHandler(this.button1_Click);
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(823, 381);
+            this.Controls.Add(this.button1);
             this.Controls.Add(this.modeltreeshow_rtb);
             this.Controls.Add(this.feature_list_rtb);
             this.Controls.Add(this.modelupdate_lbl);
@@ -175,6 +187,7 @@
         private System.Windows.Forms.Label modelupdate_lbl;
         private System.Windows.Forms.RichTextBox feature_list_rtb;
         private System.Windows.Forms.RichTextBox modeltreeshow_rtb;
+        private System.Windows.Forms.Button button1;
     }
 }
 
