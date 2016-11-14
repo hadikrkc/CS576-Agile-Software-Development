@@ -53,6 +53,7 @@
     <Compile Include="Form1.Designer.cs">
       <DependentUpon>Form1.cs</DependentUpon>
     </Compile>
+    <Compile Include="McmParser.cs" />
     <Compile Include="ModelTree.cs" />
     <Compile Include="ModelUpdate.cs" />
     <Compile Include="Program.cs" />
