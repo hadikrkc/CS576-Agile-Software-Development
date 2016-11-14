@@ -57,6 +57,7 @@ namespace SPLEModeLUpdateTool
 
         private void updatemodel_bttn_Click(object sender, EventArgs e)
         {
+            string denemegthub;
             foreach (ModelTree item in ModelUpdate.CreateModelTree())
             {
                 modeltreeshow_rtb.AppendText(item.parent.ToString().ToUpper() + "\n");
