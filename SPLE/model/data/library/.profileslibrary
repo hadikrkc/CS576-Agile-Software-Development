@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<profiles:ProfilesLibrary xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:profiles="http://all4tec.net/matelo/profiles/v5.4.1">
+  <contents xsi:type="profiles:Profile" uUID="_O634IWR_EeaUEaOmasQHEw" name="Default profile" algorithm="Equiprobable"/>
+</profiles:ProfilesLibrary>

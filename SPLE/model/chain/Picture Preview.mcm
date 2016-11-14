@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<diagram:Diagram xmlns:diagram="http://all4tec.net/matelo/diagram/v5.4.1">
+  <invokeState uUID="_4eAPMWSOEeaUEaOmasQHEw" name="Invoke" description="The initial state of this chain" xPosition="360" outgoingTransitions="_GKKdMGSPEeaUEaOmasQHEw"/>
+  <terminateState uUID="_4eAPMmSOEeaUEaOmasQHEw" name="Terminate" description="The final state of this chain" xPosition="360" yPosition="300" incomingTransitions="_GdPKMGSPEeaUEaOmasQHEw"/>
+  <states uUID="_Fuw6oGSPEeaUEaOmasQHEw" name="State" xPosition="355.42105" yPosition="139.26315" incomingTransitions="_GKKdMGSPEeaUEaOmasQHEw _GkQYMGSPEeaUEaOmasQHEw" outgoingTransitions="_GQ4JMGSPEeaUEaOmasQHEw _GpcaMGSPEeaUEaOmasQHEw _G2kQMGSPEeaUEaOmasQHEw"/>
+  <states uUID="_FzozkGSPEeaUEaOmasQHEw" name="State" xPosition="361.98245" yPosition="258.5614" incomingTransitions="_GV_SsGSPEeaUEaOmasQHEw _Gun1IGSPEeaUEaOmasQHEw _G8vwsGSPEeaUEaOmasQHEw" outgoingTransitions="_GdPKMGSPEeaUEaOmasQHEw _GkQYMGSPEeaUEaOmasQHEw"/>
+  <states uUID="_F2nPEGSPEeaUEaOmasQHEw" name="PNG" xPosition="287.42105" yPosition="211.4386" incomingTransitions="_GQ4JMGSPEeaUEaOmasQHEw" outgoingTransitions="_GV_SsGSPEeaUEaOmasQHEw"/>
+  <states uUID="_F46VIGSPEeaUEaOmasQHEw" name="JPG" xPosition="381.0702" yPosition="201.29825" incomingTransitions="_GpcaMGSPEeaUEaOmasQHEw" outgoingTransitions="_Gun1IGSPEeaUEaOmasQHEw"/>
+  <states uUID="_F7gWIGSPEeaUEaOmasQHEw" name="BMP" xPosition="491.42105" yPosition="213.82455" incomingTransitions="_G2kQMGSPEeaUEaOmasQHEw" outgoingTransitions="_G8vwsGSPEeaUEaOmasQHEw"/>
+  <transitions uUID="_GKKdMGSPEeaUEaOmasQHEw" sourceState="_4eAPMWSOEeaUEaOmasQHEw" targetState="_Fuw6oGSPEeaUEaOmasQHEw">
+    <verifications uUID="_GLJ7sWSPEeaUEaOmasQHEw" name="Verification"/>
+    <stimulation uUID="_GLJ7sGSPEeaUEaOmasQHEw" name="Stimulation"/>
+    <probabilities>
+      <key href="/model/data/library/.profileslibrary#_O634IWR_EeaUEaOmasQHEw"/>
+      <value frequency="Normal" value="1.000"/>
+    </probabilities>
+  </transitions>
+  <transitions uUID="_GQ4JMGSPEeaUEaOmasQHEw" sourceState="_Fuw6oGSPEeaUEaOmasQHEw" targetState="_F2nPEGSPEeaUEaOmasQHEw">
+    <verifications uUID="_GRFkkGSPEeaUEaOmasQHEw" name="Verification"/>
+    <stimulation uUID="_GRE9gGSPEeaUEaOmasQHEw" name="Stimulation"/>
+    <probabilities>
+      <key href="/model/data/library/.profileslibrary#_O634IWR_EeaUEaOmasQHEw"/>
+      <value frequency="Normal" value="0.334"/>
+    </probabilities>
+  </transitions>
+  <transitions uUID="_GV_SsGSPEeaUEaOmasQHEw" sourceState="_F2nPEGSPEeaUEaOmasQHEw" targetState="_FzozkGSPEeaUEaOmasQHEw">
+    <verifications uUID="_GWMuEWSPEeaUEaOmasQHEw" name="Verification"/>
+    <stimulation uUID="_GWMuEGSPEeaUEaOmasQHEw" name="Stimulation"/>
+    <probabilities>
+      <key href="/model/data/library/.profileslibrary#_O634IWR_EeaUEaOmasQHEw"/>
+      <value frequency="Normal" value="1.000"/>
+    </probabilities>
+  </transitions>
+  <transitions uUID="_GdPKMGSPEeaUEaOmasQHEw" sourceState="_FzozkGSPEeaUEaOmasQHEw" targetState="_4eAPMmSOEeaUEaOmasQHEw">
+    <verifications uUID="_GddzsGSPEeaUEaOmasQHEw" name="Verification"/>
+    <stimulation uUID="_GddMoGSPEeaUEaOmasQHEw" name="Stimulation"/>
+    <probabilities>
+      <key href="/model/data/library/.profileslibrary#_O634IWR_EeaUEaOmasQHEw"/>
+      <value frequency="Normal" value="0.500"/>
+    </probabilities>
+  </transitions>
+  <transitions uUID="_GkQYMGSPEeaUEaOmasQHEw" sourceState="_FzozkGSPEeaUEaOmasQHEw" targetState="_Fuw6oGSPEeaUEaOmasQHEw">
+    <verifications uUID="_GkfBsGSPEeaUEaOmasQHEw" name="Verification"/>
+    <stimulation uUID="_GkeaoGSPEeaUEaOmasQHEw" name="Stimulation"/>
+    <probabilities>
+      <key href="/model/data/library/.profileslibrary#_O634IWR_EeaUEaOmasQHEw"/>
+      <value frequency="Normal" value="0.500"/>
+    </probabilities>
+  </transitions>
+  <transitions uUID="_GpcaMGSPEeaUEaOmasQHEw" sourceState="_Fuw6oGSPEeaUEaOmasQHEw" targetState="_F46VIGSPEeaUEaOmasQHEw">
+    <verifications uUID="_GpsR0GSPEeaUEaOmasQHEw" name="Verification"/>
+    <stimulation uUID="_GprqwGSPEeaUEaOmasQHEw" name="Stimulation"/>
+    <probabilities>
+      <key href="/model/data/library/.profileslibrary#_O634IWR_EeaUEaOmasQHEw"/>
+      <value frequency="Normal" value="0.333"/>
+    </probabilities>
+  </transitions>
+  <transitions uUID="_Gun1IGSPEeaUEaOmasQHEw" sourceState="_F46VIGSPEeaUEaOmasQHEw" targetState="_FzozkGSPEeaUEaOmasQHEw">
+    <verifications uUID="_Gu2eoWSPEeaUEaOmasQHEw" name="Verification"/>
+    <stimulation uUID="_Gu2eoGSPEeaUEaOmasQHEw" name="Stimulation"/>
+    <probabilities>
+      <key href="/model/data/library/.profileslibrary#_O634IWR_EeaUEaOmasQHEw"/>
+      <value frequency="Normal" value="1.000"/>
+    </probabilities>
+  </transitions>
+  <transitions uUID="_G2kQMGSPEeaUEaOmasQHEw" sourceState="_Fuw6oGSPEeaUEaOmasQHEw" targetState="_F7gWIGSPEeaUEaOmasQHEw">
+    <verifications uUID="_G20H0WSPEeaUEaOmasQHEw" name="Verification"/>
+    <stimulation uUID="_G20H0GSPEeaUEaOmasQHEw" name="Stimulation"/>
+    <probabilities>
+      <key href="/model/data/library/.profileslibrary#_O634IWR_EeaUEaOmasQHEw"/>
+      <value frequency="Normal" value="0.333"/>
+    </probabilities>
+  </transitions>
+  <transitions uUID="_G8vwsGSPEeaUEaOmasQHEw" sourceState="_F7gWIGSPEeaUEaOmasQHEw" targetState="_FzozkGSPEeaUEaOmasQHEw">
+    <verifications uUID="_G8_BQGSPEeaUEaOmasQHEw" name="Verification"/>
+    <stimulation uUID="_G8-aMGSPEeaUEaOmasQHEw" name="Stimulation"/>
+    <probabilities>
+      <key href="/model/data/library/.profileslibrary#_O634IWR_EeaUEaOmasQHEw"/>
+      <value frequency="Normal" value="1.000"/>
+    </probabilities>
+  </transitions>
+</diagram:Diagram>

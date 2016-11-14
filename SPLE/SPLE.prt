@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project:Project xmlns:project="http://all4tec.net/matelo/project/v5.4.1" uUID="_O7jNkGR_EeaUEaOmasQHEw" rootChain="_O7jNkWR_EeaUEaOmasQHEw">
+  <chains uUID="_O7jNkWR_EeaUEaOmasQHEw" name="Root" path="/model/chain/Root.mcm"/>
+  <chains uUID="_S21XYGR_EeaUEaOmasQHEw" name="SmartTV" path="/model/chain/SmartTV.mcm"/>
+  <chains uUID="_WUdU0GR_EeaUEaOmasQHEw" name="Connectivity" path="/model/chain/Connectivity.mcm"/>
+  <chains uUID="_60UkIGR_EeaUEaOmasQHEw" name="3D" path="/model/chain/3D.mcm"/>
+  <chains uUID="_7DkhEGR_EeaUEaOmasQHEw" name="CEC" path="/model/chain/CEC.mcm"/>
+  <chains uUID="_7RPJoGR_EeaUEaOmasQHEw" name="MediaBrowser" path="/model/chain/MediaBrowser.mcm"/>
+  <chains uUID="_7gaOEGR_EeaUEaOmasQHEw" name="Bluetooth" path="/model/chain/Bluetooth.mcm"/>
+  <chains uUID="_8kIU4GR_EeaUEaOmasQHEw" name="Keypad" path="/model/chain/Keypad.mcm"/>
+  <chains uUID="_8kIU4WR_EeaUEaOmasQHEw" name="RC" path="/model/chain/RC.mcm"/>
+  <chains uUID="_8kIU4mR_EeaUEaOmasQHEw" name="Sources" path="/model/chain/Sources.mcm"/>
+  <chains uUID="_8kIU42R_EeaUEaOmasQHEw" name="AutoTVOff" path="/model/chain/AutoTVOff.mcm"/>
+  <chains uUID="_9wuD0GR_EeaUEaOmasQHEw" name="EPG" path="/model/chain/EPG.mcm"/>
+  <chains uUID="_9wuD0WR_EeaUEaOmasQHEw" name="HDMI" path="/model/chain/HDMI.mcm"/>
+  <chains uUID="_Xcqj8GSIEeaUEaOmasQHEw" name="MB_VideoPlay" path="/model/chain/MB_VideoPlay.mcm"/>
+  <chains uUID="_aaaugGSIEeaUEaOmasQHEw" name="MB_AudioPlay" path="/model/chain/MB_AudioPlay.mcm"/>
+  <chains uUID="_4d_oIGSOEeaUEaOmasQHEw" name="MB_PicturePreview" path="/model/chain/MB_PicturePreview.mcm"/>
+  <chains uUID="_UpdYUGSPEeaUEaOmasQHEw" name="3D_GlassType" path="/model/chain/3D_GlassType.mcm"/>
+  <chains uUID="_l91qMGSPEeaUEaOmasQHEw" name="DLNA" path="/model/chain/DLNA.mcm"/>
+  <chains uUID="_mNLGsGSPEeaUEaOmasQHEw" name="FollowTV" path="/model/chain/FollowTV.mcm"/>
+  <chains uUID="_mmQ8IGSPEeaUEaOmasQHEw" name="WirelessDisplay" path="/model/chain/WirelessDisplay.mcm"/>
+  <chains uUID="_m3-XMGSPEeaUEaOmasQHEw" name="Portal" path="/model/chain/Portal.mcm"/>
+</project:Project>
