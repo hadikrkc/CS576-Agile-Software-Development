@@ -57,7 +57,6 @@ namespace SPLEModeLUpdateTool
 
         private void updatemodel_bttn_Click(object sender, EventArgs e)
         {
-            string denemegthub;
             foreach (ModelTree item in ModelUpdate.CreateModelTree())
             {
                 modeltreeshow_rtb.AppendText(item.parent.ToString().ToUpper() + "\n");
@@ -74,6 +73,12 @@ namespace SPLEModeLUpdateTool
         {
             McmParser Xmlpars = new McmParser("C:\\Users\\huseyinor\\Desktop\\SPLE", "SmartTV.mcm");
             Xmlpars.XmlParsing();
+        }
+
+        private void button2_Click(object sender, EventArgs e)
+        {
+            McmParser Xmlpars = new McmParser("C:\\Users\\huseyinor\\Desktop\\SPLE", "SmartTV.mcm");
+            Xmlpars.WriteXmlNewValues();
         }
     }
 }

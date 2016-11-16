@@ -5,6 +5,8 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Xml;
 using System.IO;
+using System.Windows.Forms;
+using System.Xml.Linq;
 
 namespace SPLEModeLUpdateTool
 {
@@ -16,6 +18,48 @@ namespace SPLEModeLUpdateTool
         {
             spath = path;
             sfile = file;
+        }
+
+        public void WriteXmlNewValues()
+        {
+
+            string kayitdosya;
+            string sline = "";
+
+            XmlDocument xmlVerisi = new XmlDocument();
+            xmlVerisi.Load(spath + "\\model\\chain\\" + sfile);
+
+            XmlNodeList xmltransition = xmlVerisi.GetElementsByTagName("transitions");
+            if (!System.IO.Directory.Exists("modelparserresult"))
+            {
+                MessageBox.Show("modelparserresult folder ı yok !!!\nLütfen Önce XmlParsing Methodunu çalıştırınız...");
+                return;
+            }
+
+            kayitdosya = "modelparserresult\\" + sfile.Substring(0, sfile.IndexOf(".")) + ".txt";
+            StreamReader reader = new StreamReader(kayitdosya);
+            char[] delimeterChars = { ',' };
+
+            while (sline != null)
+            {
+                sline = reader.ReadLine();
+
+                if (sline != null)
+                {
+                    string[] swords = sline.Split(delimeterChars);
+
+                    foreach (XmlNode node2 in xmltransition)
+                    {
+                        XmlNode item = node2.SelectSingleNode("//transitions");
+                        if (node2.Attributes["targetState"].Value == swords[1])
+                        {
+                            node2.LastChild.LastChild.Attributes["value"].Value = swords[2];
+                        }
+                    }
+                    xmlVerisi.Save(spath + "\\model\\chain\\" + sfile);
+                }
+            }
+            reader.Close();
         }
 
         public void XmlParsing()

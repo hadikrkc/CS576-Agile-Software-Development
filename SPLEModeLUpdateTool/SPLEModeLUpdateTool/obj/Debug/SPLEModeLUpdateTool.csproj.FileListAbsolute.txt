@@ -38,11 +38,10 @@ C:\Users\DVTEST\Desktop\agile\CS576-Agile-Software-Development\SPLEModeLUpdateTo
 C:\Users\DVTEST\Desktop\agile\CS576-Agile-Software-Development\SPLEModeLUpdateTool\SPLEModeLUpdateTool\obj\Debug\SPLEModeLUpdateTool.Properties.Resources.resources
 C:\Users\DVTEST\Desktop\agile\CS576-Agile-Software-Development\SPLEModeLUpdateTool\SPLEModeLUpdateTool\obj\Debug\SPLEModeLUpdateTool.csproj.GenerateResource.Cache
 C:\Users\huseyinor\Documents\GitHub\CS576-Agile-Software-Development\SPLEModeLUpdateTool\SPLEModeLUpdateTool\bin\Debug\SPLEModeLUpdateTool.exe.config
-C:\Users\huseyinor\Documents\GitHub\CS576-Agile-Software-Development\SPLEModeLUpdateTool\SPLEModeLUpdateTool\obj\Debug\SPLEModeLUpdateTool.exe
-C:\Users\huseyinor\Documents\GitHub\CS576-Agile-Software-Development\SPLEModeLUpdateTool\SPLEModeLUpdateTool\obj\Debug\SPLEModeLUpdateTool.pdb
 C:\Users\huseyinor\Documents\GitHub\CS576-Agile-Software-Development\SPLEModeLUpdateTool\SPLEModeLUpdateTool\bin\Debug\SPLEModeLUpdateTool.exe
 C:\Users\huseyinor\Documents\GitHub\CS576-Agile-Software-Development\SPLEModeLUpdateTool\SPLEModeLUpdateTool\bin\Debug\SPLEModeLUpdateTool.pdb
-C:\Users\huseyinor\Documents\GitHub\CS576-Agile-Software-Development\SPLEModeLUpdateTool\SPLEModeLUpdateTool\obj\Debug\SPLEModeLUpdateTool.csprojResolveAssemblyReference.cache
 C:\Users\huseyinor\Documents\GitHub\CS576-Agile-Software-Development\SPLEModeLUpdateTool\SPLEModeLUpdateTool\obj\Debug\SPLEModeLUpdateTool.Form1.resources
 C:\Users\huseyinor\Documents\GitHub\CS576-Agile-Software-Development\SPLEModeLUpdateTool\SPLEModeLUpdateTool\obj\Debug\SPLEModeLUpdateTool.Properties.Resources.resources
 C:\Users\huseyinor\Documents\GitHub\CS576-Agile-Software-Development\SPLEModeLUpdateTool\SPLEModeLUpdateTool\obj\Debug\SPLEModeLUpdateTool.csproj.GenerateResource.Cache
+C:\Users\huseyinor\Documents\GitHub\CS576-Agile-Software-Development\SPLEModeLUpdateTool\SPLEModeLUpdateTool\obj\Debug\SPLEModeLUpdateTool.exe
+C:\Users\huseyinor\Documents\GitHub\CS576-Agile-Software-Development\SPLEModeLUpdateTool\SPLEModeLUpdateTool\obj\Debug\SPLEModeLUpdateTool.pdb
