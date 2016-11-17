@@ -5,7 +5,7 @@ VisualStudioVersion = 14.0.25420.1
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SPLEModeLUpdateTool", "SPLEModeLUpdateTool\SPLEModeLUpdateTool.csproj", "{443B9AC7-76FB-42E5-8D03-6ACF9EF9C988}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SPLEModelUpdateTool.Tests", "SPLEModelUpdateTool.Tests\SPLEModelUpdateTool.Tests.csproj", "{48338CB0-6506-4C35-902F-2FF058C91DAF}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SPLEModeLUpdateTool.Tests", "SPLEModeLUpdateTool.Tests\SPLEModeLUpdateTool.Tests.csproj", "{3E3D5B35-5E14-4D2F-B2AE-AB0D976065BF}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -17,10 +17,10 @@ Global
 		{443B9AC7-76FB-42E5-8D03-6ACF9EF9C988}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{443B9AC7-76FB-42E5-8D03-6ACF9EF9C988}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{443B9AC7-76FB-42E5-8D03-6ACF9EF9C988}.Release|Any CPU.Build.0 = Release|Any CPU
-		{48338CB0-6506-4C35-902F-2FF058C91DAF}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{48338CB0-6506-4C35-902F-2FF058C91DAF}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{48338CB0-6506-4C35-902F-2FF058C91DAF}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{48338CB0-6506-4C35-902F-2FF058C91DAF}.Release|Any CPU.Build.0 = Release|Any CPU
+		{3E3D5B35-5E14-4D2F-B2AE-AB0D976065BF}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{3E3D5B35-5E14-4D2F-B2AE-AB0D976065BF}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{3E3D5B35-5E14-4D2F-B2AE-AB0D976065BF}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{3E3D5B35-5E14-4D2F-B2AE-AB0D976065BF}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

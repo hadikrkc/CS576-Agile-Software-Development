@@ -44,3 +44,11 @@ C:\Users\huseyinor\Documents\GitHub\CS576-Agile-Software-Development\SPLEModeLUp
 C:\Users\huseyinor\Documents\GitHub\CS576-Agile-Software-Development\SPLEModeLUpdateTool\SPLEModeLUpdateTool\obj\Debug\SPLEModeLUpdateTool.csproj.GenerateResource.Cache
 C:\Users\huseyinor\Documents\GitHub\CS576-Agile-Software-Development\SPLEModeLUpdateTool\SPLEModeLUpdateTool\obj\Debug\SPLEModeLUpdateTool.exe
 C:\Users\huseyinor\Documents\GitHub\CS576-Agile-Software-Development\SPLEModeLUpdateTool\SPLEModeLUpdateTool\obj\Debug\SPLEModeLUpdateTool.pdb
+C:\Users\Gönül\Desktop\AgileProje\CS576-Agile-Software-Development\SPLEModeLUpdateTool\SPLEModeLUpdateTool\bin\Debug\SPLEModeLUpdateTool.exe.config
+C:\Users\Gönül\Desktop\AgileProje\CS576-Agile-Software-Development\SPLEModeLUpdateTool\SPLEModeLUpdateTool\obj\Debug\SPLEModeLUpdateTool.exe
+C:\Users\Gönül\Desktop\AgileProje\CS576-Agile-Software-Development\SPLEModeLUpdateTool\SPLEModeLUpdateTool\obj\Debug\SPLEModeLUpdateTool.pdb
+C:\Users\Gönül\Desktop\AgileProje\CS576-Agile-Software-Development\SPLEModeLUpdateTool\SPLEModeLUpdateTool\bin\Debug\SPLEModeLUpdateTool.exe
+C:\Users\Gönül\Desktop\AgileProje\CS576-Agile-Software-Development\SPLEModeLUpdateTool\SPLEModeLUpdateTool\bin\Debug\SPLEModeLUpdateTool.pdb
+C:\Users\Gönül\Desktop\AgileProje\CS576-Agile-Software-Development\SPLEModeLUpdateTool\SPLEModeLUpdateTool\obj\Debug\SPLEModeLUpdateTool.Form1.resources
+C:\Users\Gönül\Desktop\AgileProje\CS576-Agile-Software-Development\SPLEModeLUpdateTool\SPLEModeLUpdateTool\obj\Debug\SPLEModeLUpdateTool.Properties.Resources.resources
+C:\Users\Gönül\Desktop\AgileProje\CS576-Agile-Software-Development\SPLEModeLUpdateTool\SPLEModeLUpdateTool\obj\Debug\SPLEModeLUpdateTool.csproj.GenerateResource.Cache

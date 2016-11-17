@@ -7,7 +7,8 @@ using System.Threading.Tasks;
 
 namespace SPLEModeLUpdateTool
 {
-    class FileProcess
+    //class public yapıldı
+    public class FileProcess
     {
         
         private static string[] feature_element;
