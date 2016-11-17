@@ -16,7 +16,7 @@ namespace SPLEModeLUpdateTool
         public Form1()
         {
             InitializeComponent();
-            if (!System.IO.File.Exists("txtfolder\\model_subtree_guncel.txt"))
+            if (System.IO.File.Exists("txtfolder\\model_subtree_guncel.txt"))
                 System.IO.File.Delete("txtfolder\\model_subtree_guncel.txt");
         }
 
