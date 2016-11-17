@@ -11,8 +11,8 @@ namespace SPLEModeLUpdateTool.Tests
         public void Test_readFeature()
         {
             //Arrange
-            
-            FileProcess f = new FileProcess()
+
+            FileProcess f = new FileProcess();
 
            //Act
            

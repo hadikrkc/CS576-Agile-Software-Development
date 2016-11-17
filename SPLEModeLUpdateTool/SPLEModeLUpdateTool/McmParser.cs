@@ -10,7 +10,7 @@ using System.Xml.Linq;
 
 namespace SPLEModeLUpdateTool
 {
-    class McmParser
+    public class McmParser
     {
         string spath, sfile;
 
