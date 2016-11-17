@@ -1,0 +1,8 @@
+DLNA,_bz-eQGSPEeaUEaOmasQHEw,0.34
+FollowTV,_b2VOsGSPEeaUEaOmasQHEw,0.0
+HBBTV,_b-azsGSPEeaUEaOmasQHEw,0.0
+Netflix,_b472wGSPEeaUEaOmasQHEw,0.0
+Portal,_b7rBsGSPEeaUEaOmasQHEw,0.0
+Verimatrix Web,_cJBhMGSPEeaUEaOmasQHEw,0.0
+Wifi,_cB2iMGSPEeaUEaOmasQHEw,0.33
+Wireless Display,_cE52MGSPEeaUEaOmasQHEw,0.33

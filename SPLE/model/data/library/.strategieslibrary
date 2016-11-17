@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<strategies:StrategiesLibrary xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:instances="http://all4tec.net/matelo/instances/v5.4.1" xmlns:strategies="http://all4tec.net/matelo/generationstrategies/v5.4.1">
+  <contents xsi:type="strategies:GenerationStrategy" uUID="_O7nfAWR_EeaUEaOmasQHEw" name="Default Strategy" description="Strategy's description">
+    <profile href="/model/data/library/.profileslibrary#_O634IWR_EeaUEaOmasQHEw"/>
+    <instanceChainsUsed xsi:type="instances:RootInstanceChain" href="/model/data/utils/.instancechains#_O7lCwGR_EeaUEaOmasQHEw"/>
+  </contents>
+</strategies:StrategiesLibrary>

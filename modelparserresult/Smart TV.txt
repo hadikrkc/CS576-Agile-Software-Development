@@ -1,0 +1,16 @@
+Connectivity,_UzBXQGR_EeaUEaOmasQHEw,0.063
+3D,_Z4e1MGR_EeaUEaOmasQHEw,0.063
+CEC,_bBu8QGR_EeaUEaOmasQHEw,0.062
+Media Browser,_bhk58GR_EeaUEaOmasQHEw,0.063
+Bluetooth,_d4dRwGR_EeaUEaOmasQHEw,0.063
+EPG,_d_xasGR_EeaUEaOmasQHEw,0.063
+HDMI,_eDWTIGR_EeaUEaOmasQHEw,0.063
+Keypad,_hEJxsGR_EeaUEaOmasQHEw,0.063
+RC,_hH8skGR_EeaUEaOmasQHEw,0.063
+Sources,_hLd6oGR_EeaUEaOmasQHEw,0.062
+Auto TV Off,_kCz7MGR_EeaUEaOmasQHEw,0.062
+Bootlogo,_kv0yMGR_EeaUEaOmasQHEw,0.062
+DualView Support,_kzLBIGR_EeaUEaOmasQHEw,0.062
+TwinTuner,_k5azEGR_EeaUEaOmasQHEw,0.062
+Amblight Sensor,_2F5GIGR_EeaUEaOmasQHEw,0.062
+Audio Description,_2JnIgGR_EeaUEaOmasQHEw,0.062

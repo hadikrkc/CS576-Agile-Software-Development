@@ -1,0 +1,20 @@
+Smart TV:Connectivity,3D,CEC,Media Browser,Bluetooth,EPG,HDMI,Keypad,RC,Sources,Amblight Sensor,Audio description,Auto TV Off,bootlogo,DualView support,Twin Tuner
+Connectivity:DLNA,Wifi,FollowTV,Wireless Display,Netflix,Portal,HBTV,VerimatrixWeb
+DLNA:Audio video Sharing,DLNA
+FollowTV:DMR,Mirror
+Wireless Display:IntelWidi,Miracast
+Portal:VSTL,FXM,TSB
+3D:Glass Type
+Glass Type:ACC,ENT
+CEC:Audio Control,Auto Power Down
+Media Browser:Video Play,Audio Play, PicturePreview
+Video Play:MKV,AVI,WMA,WMV
+Audio Play:MP3
+Picture Preview:PNG,JPG,BMP
+Bluetooth:Headset,Shutter Glass
+EPG:Timeline Schedule,List Schedule,Now and Next
+HDMI:1,2,3,4
+Keypad:146,cy,f,145,148,147
+RC:12,14,w3,y78,45,4565,er34,yu8,12s,14x,34s,34,2846
+Sources:hdmi,scart,dvd,scarts,scart2,scart2s,fav,pc,tv,ypbpr,widi,ipcam
+Auto TV Off:4hr,5hr,6hr,7hr,8hr,Off

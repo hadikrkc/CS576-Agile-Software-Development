@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<attributeslibrary:AttributesLibraryRoot xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:attributeslibrary="http://all4tec.net/matelo/attributeslibrary/v5.4.1">
+  <attributesLibrary/>
+  <projectAttributesLibrary/>
+  <chainAttributesLibrary/>
+  <dataTypesLibrary>
+    <contents xsi:type="attributeslibrary:BooleanDataType" uUID="_O7I95WR_EeaUEaOmasQHEw" name="Boolean" type="Boolean"/>
+    <contents xsi:type="attributeslibrary:StringDataType" uUID="_O7I95mR_EeaUEaOmasQHEw" name="String" type="String"/>
+    <contents xsi:type="attributeslibrary:NumericalDataType" uUID="_O7I952R_EeaUEaOmasQHEw" name="Numerical" type="Numerical"/>
+  </dataTypesLibrary>
+</attributeslibrary:AttributesLibraryRoot>

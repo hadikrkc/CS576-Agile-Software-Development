@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<diagram:Diagram xmlns:diagram="http://all4tec.net/matelo/diagram/v5.4.1">
+  <invokeState uUID="_60UkImR_EeaUEaOmasQHEw" name="Invoke" description="The initial state of this chain" xPosition="360" outgoingTransitions="_S2x5wGSPEeaUEaOmasQHEw"/>
+  <terminateState uUID="_60UkI2R_EeaUEaOmasQHEw" name="Terminate" description="The final state of this chain" xPosition="360" yPosition="300" incomingTransitions="_THG0wGSPEeaUEaOmasQHEw"/>
+  <states uUID="_STSyMGSPEeaUEaOmasQHEw" name="State" xPosition="359.0" yPosition="145.22807" incomingTransitions="_S2x5wGSPEeaUEaOmasQHEw" outgoingTransitions="_S9aGMGSPEeaUEaOmasQHEw"/>
+  <states uUID="_SbcooGSPEeaUEaOmasQHEw" name="State" xPosition="360.193" yPosition="248.42105" incomingTransitions="_TB_rQGSPEeaUEaOmasQHEw" outgoingTransitions="_THG0wGSPEeaUEaOmasQHEw"/>
+  <states uUID="_SdvusGSPEeaUEaOmasQHEw" name="Glass Type" xPosition="325.00003" yPosition="189.36842" incomingTransitions="_S9aGMGSPEeaUEaOmasQHEw" outgoingTransitions="_TB_rQGSPEeaUEaOmasQHEw">
+    <chain href="/.prt#_UpdYUGSPEeaUEaOmasQHEw"/>
+  </states>
+  <transitions uUID="_S2x5wGSPEeaUEaOmasQHEw" sourceState="_60UkImR_EeaUEaOmasQHEw" targetState="_STSyMGSPEeaUEaOmasQHEw">
+    <verifications uUID="_S3ymYGSPEeaUEaOmasQHEw" name="Verification"/>
+    <stimulation uUID="_S3x_UGSPEeaUEaOmasQHEw" name="Stimulation"/>
+    <probabilities>
+      <key href="/model/data/library/.profileslibrary#_O634IWR_EeaUEaOmasQHEw"/>
+      <value frequency="Normal" value="1.000"/>
+    </probabilities>
+  </transitions>
+  <transitions uUID="_S9aGMGSPEeaUEaOmasQHEw" sourceState="_STSyMGSPEeaUEaOmasQHEw" targetState="_SdvusGSPEeaUEaOmasQHEw">
+    <verifications uUID="_S9m6gGSPEeaUEaOmasQHEw" name="Verification"/>
+    <stimulation uUID="_S9mTcGSPEeaUEaOmasQHEw" name="Stimulation"/>
+    <probabilities>
+      <key href="/model/data/library/.profileslibrary#_O634IWR_EeaUEaOmasQHEw"/>
+      <value frequency="Normal" value="1.000"/>
+    </probabilities>
+  </transitions>
+  <transitions uUID="_TB_rQGSPEeaUEaOmasQHEw" sourceState="_SdvusGSPEeaUEaOmasQHEw" targetState="_SbcooGSPEeaUEaOmasQHEw">
+    <verifications uUID="_TCNGoGSPEeaUEaOmasQHEw" name="Verification"/>
+    <stimulation uUID="_TCMfkGSPEeaUEaOmasQHEw" name="Stimulation"/>
+    <probabilities>
+      <key href="/model/data/library/.profileslibrary#_O634IWR_EeaUEaOmasQHEw"/>
+      <value frequency="Normal" value="1.000"/>
+    </probabilities>
+  </transitions>
+  <transitions uUID="_THG0wGSPEeaUEaOmasQHEw" sourceState="_SbcooGSPEeaUEaOmasQHEw" targetState="_60UkI2R_EeaUEaOmasQHEw">
+    <verifications uUID="_THTpEWSPEeaUEaOmasQHEw" name="Verification"/>
+    <stimulation uUID="_THTpEGSPEeaUEaOmasQHEw" name="Stimulation"/>
+    <probabilities>
+      <key href="/model/data/library/.profileslibrary#_O634IWR_EeaUEaOmasQHEw"/>
+      <value frequency="Normal" value="1.000"/>
+    </probabilities>
+  </transitions>
+</diagram:Diagram>

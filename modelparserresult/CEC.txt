@@ -1,0 +1,2 @@
+Audio Control,_MjjBIGSPEeaUEaOmasQHEw,0.500
+Auto Power Down,_MlilMGSPEeaUEaOmasQHEw,0.500
