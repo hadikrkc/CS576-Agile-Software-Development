@@ -97,6 +97,7 @@
             // 
             // updatemodel_bttn
             // 
+            this.updatemodel_bttn.Enabled = false;
             this.updatemodel_bttn.Location = new System.Drawing.Point(423, 40);
             this.updatemodel_bttn.Name = "updatemodel_bttn";
             this.updatemodel_bttn.Size = new System.Drawing.Size(124, 23);

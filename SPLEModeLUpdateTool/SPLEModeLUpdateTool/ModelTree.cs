@@ -18,14 +18,7 @@ namespace SPLEModeLUpdateTool
             childs = childs;
             parent = parent;
             childvalue = childvalue;
-
         }
-        // Method
-        /*
-        public void SetChilds(List<string> childs_)
-        {
-            childs = childs_;
-        }*/
 
     }
 
