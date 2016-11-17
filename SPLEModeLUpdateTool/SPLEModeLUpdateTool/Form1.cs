@@ -60,6 +60,7 @@ namespace SPLEModeLUpdateTool
 
         private void updatemodel_bttn_Click(object sender, EventArgs e)
         {
+<<<<<<< HEAD
            //bu kısım mcm den parse edilerek oluşturlan txt lerde value değerlerini güncelleyerek mcm'e tekrar yazdıracak.
 
 
@@ -67,6 +68,8 @@ namespace SPLEModeLUpdateTool
 
         private void exportmodel_btn_Click(object sender, EventArgs e)
         {
+=======
+>>>>>>> origin/master
             foreach (ModelTree item in ModelUpdate.CreateModelTree())
             {
                 McmParser Xmlpars = new McmParser("SPLE\\", item.parent+".mcm");
@@ -125,6 +128,12 @@ namespace SPLEModeLUpdateTool
                     modeltreeshow_rtb.AppendText("  --" + child.ToString().ToUpper() + " =>  child_value: " + item.childvalue.ToString() + "\n");
                 }
             }
+        }
+
+        private void button2_Click(object sender, EventArgs e)
+        {
+            McmParser Xmlpars = new McmParser("C:\\Users\\huseyinor\\Desktop\\SPLE", "SmartTV.mcm");
+            Xmlpars.WriteXmlNewValues();
         }
     }
 }

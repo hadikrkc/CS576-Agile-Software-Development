@@ -39,8 +39,13 @@
             this.chkfeaturetree_bttn = new System.Windows.Forms.Button();
             this.feature_list_rtb = new System.Windows.Forms.RichTextBox();
             this.modeltreeshow_rtb = new System.Windows.Forms.RichTextBox();
+<<<<<<< HEAD
             this.exportmodel_btn = new System.Windows.Forms.Button();
             this.calculatenewfeature_btn = new System.Windows.Forms.Button();
+=======
+            this.button1 = new System.Windows.Forms.Button();
+            this.button2 = new System.Windows.Forms.Button();
+>>>>>>> origin/master
             this.SuspendLayout();
             // 
             // openfeaturemodel_tb
@@ -151,13 +156,28 @@
             this.calculatenewfeature_btn.UseVisualStyleBackColor = true;
             this.calculatenewfeature_btn.Click += new System.EventHandler(this.calculatenewfeature_btn_Click);
             // 
+            // button2
+            // 
+            this.button2.Location = new System.Drawing.Point(538, 79);
+            this.button2.Name = "button2";
+            this.button2.Size = new System.Drawing.Size(75, 23);
+            this.button2.TabIndex = 12;
+            this.button2.Text = "button2";
+            this.button2.UseVisualStyleBackColor = true;
+            this.button2.Click += new System.EventHandler(this.button2_Click);
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(823, 381);
+<<<<<<< HEAD
             this.Controls.Add(this.calculatenewfeature_btn);
             this.Controls.Add(this.exportmodel_btn);
+=======
+            this.Controls.Add(this.button2);
+            this.Controls.Add(this.button1);
+>>>>>>> origin/master
             this.Controls.Add(this.modeltreeshow_rtb);
             this.Controls.Add(this.feature_list_rtb);
             this.Controls.Add(this.chkfeaturetree_bttn);
@@ -187,8 +207,13 @@
         private System.Windows.Forms.Button chkfeaturetree_bttn;
         private System.Windows.Forms.RichTextBox feature_list_rtb;
         private System.Windows.Forms.RichTextBox modeltreeshow_rtb;
+<<<<<<< HEAD
         private System.Windows.Forms.Button exportmodel_btn;
         private System.Windows.Forms.Button calculatenewfeature_btn;
+=======
+        private System.Windows.Forms.Button button1;
+        private System.Windows.Forms.Button button2;
+>>>>>>> origin/master
     }
 }
 
