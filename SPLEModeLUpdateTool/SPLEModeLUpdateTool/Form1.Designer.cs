@@ -33,26 +33,26 @@
             this.openfeaturemodel_lbl = new System.Windows.Forms.Label();
             this.openmodel_lbl = new System.Windows.Forms.Label();
             this.openmodel_bttn = new System.Windows.Forms.Button();
-            this.openmodel_tb = new System.Windows.Forms.TextBox();
+            this.openmodelpath_tb = new System.Windows.Forms.TextBox();
             this.modelFolderBrowserDialog = new System.Windows.Forms.FolderBrowserDialog();
             this.updatemodel_bttn = new System.Windows.Forms.Button();
             this.chkfeaturetree_bttn = new System.Windows.Forms.Button();
-            this.modelupdate_lbl = new System.Windows.Forms.Label();
             this.feature_list_rtb = new System.Windows.Forms.RichTextBox();
             this.modeltreeshow_rtb = new System.Windows.Forms.RichTextBox();
-            this.button1 = new System.Windows.Forms.Button();
+            this.exportmodel_btn = new System.Windows.Forms.Button();
+            this.calculatenewfeature_btn = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // openfeaturemodel_tb
             // 
-            this.openfeaturemodel_tb.Location = new System.Drawing.Point(12, 43);
+            this.openfeaturemodel_tb.Location = new System.Drawing.Point(12, 92);
             this.openfeaturemodel_tb.Name = "openfeaturemodel_tb";
             this.openfeaturemodel_tb.Size = new System.Drawing.Size(163, 20);
             this.openfeaturemodel_tb.TabIndex = 0;
             // 
             // openfeaturemodel_bttn
             // 
-            this.openfeaturemodel_bttn.Location = new System.Drawing.Point(194, 40);
+            this.openfeaturemodel_bttn.Location = new System.Drawing.Point(181, 92);
             this.openfeaturemodel_bttn.Name = "openfeaturemodel_bttn";
             this.openfeaturemodel_bttn.Size = new System.Drawing.Size(39, 23);
             this.openfeaturemodel_bttn.TabIndex = 1;
@@ -63,7 +63,7 @@
             // openfeaturemodel_lbl
             // 
             this.openfeaturemodel_lbl.AutoSize = true;
-            this.openfeaturemodel_lbl.Location = new System.Drawing.Point(13, 25);
+            this.openfeaturemodel_lbl.Location = new System.Drawing.Point(17, 76);
             this.openfeaturemodel_lbl.Name = "openfeaturemodel_lbl";
             this.openfeaturemodel_lbl.Size = new System.Drawing.Size(104, 13);
             this.openfeaturemodel_lbl.TabIndex = 2;
@@ -72,7 +72,7 @@
             // openmodel_lbl
             // 
             this.openmodel_lbl.AutoSize = true;
-            this.openmodel_lbl.Location = new System.Drawing.Point(17, 77);
+            this.openmodel_lbl.Location = new System.Drawing.Point(12, 18);
             this.openmodel_lbl.Name = "openmodel_lbl";
             this.openmodel_lbl.Size = new System.Drawing.Size(97, 13);
             this.openmodel_lbl.TabIndex = 5;
@@ -80,7 +80,7 @@
             // 
             // openmodel_bttn
             // 
-            this.openmodel_bttn.Location = new System.Drawing.Point(194, 92);
+            this.openmodel_bttn.Location = new System.Drawing.Point(181, 40);
             this.openmodel_bttn.Name = "openmodel_bttn";
             this.openmodel_bttn.Size = new System.Drawing.Size(39, 23);
             this.openmodel_bttn.TabIndex = 4;
@@ -88,18 +88,18 @@
             this.openmodel_bttn.UseVisualStyleBackColor = true;
             this.openmodel_bttn.Click += new System.EventHandler(this.openmodel_bttn_Click);
             // 
-            // openmodel_tb
+            // openmodelpath_tb
             // 
-            this.openmodel_tb.Location = new System.Drawing.Point(12, 95);
-            this.openmodel_tb.Name = "openmodel_tb";
-            this.openmodel_tb.Size = new System.Drawing.Size(163, 20);
-            this.openmodel_tb.TabIndex = 3;
+            this.openmodelpath_tb.Location = new System.Drawing.Point(12, 43);
+            this.openmodelpath_tb.Name = "openmodelpath_tb";
+            this.openmodelpath_tb.Size = new System.Drawing.Size(163, 20);
+            this.openmodelpath_tb.TabIndex = 3;
             // 
             // updatemodel_bttn
             // 
-            this.updatemodel_bttn.Location = new System.Drawing.Point(538, 133);
+            this.updatemodel_bttn.Location = new System.Drawing.Point(449, 92);
             this.updatemodel_bttn.Name = "updatemodel_bttn";
-            this.updatemodel_bttn.Size = new System.Drawing.Size(138, 44);
+            this.updatemodel_bttn.Size = new System.Drawing.Size(124, 23);
             this.updatemodel_bttn.TabIndex = 6;
             this.updatemodel_bttn.Text = "UPDATE MODEL";
             this.updatemodel_bttn.UseVisualStyleBackColor = true;
@@ -107,22 +107,13 @@
             // 
             // chkfeaturetree_bttn
             // 
-            this.chkfeaturetree_bttn.Location = new System.Drawing.Point(16, 133);
+            this.chkfeaturetree_bttn.Location = new System.Drawing.Point(245, 92);
             this.chkfeaturetree_bttn.Name = "chkfeaturetree_bttn";
-            this.chkfeaturetree_bttn.Size = new System.Drawing.Size(138, 44);
+            this.chkfeaturetree_bttn.Size = new System.Drawing.Size(145, 23);
             this.chkfeaturetree_bttn.TabIndex = 7;
-            this.chkfeaturetree_bttn.Text = "CHECK FETURE TREE";
+            this.chkfeaturetree_bttn.Text = "IMPORT FEATURE TREE";
             this.chkfeaturetree_bttn.UseVisualStyleBackColor = true;
             this.chkfeaturetree_bttn.Click += new System.EventHandler(this.chkfeaturetree_bttn_Click);
-            // 
-            // modelupdate_lbl
-            // 
-            this.modelupdate_lbl.AutoSize = true;
-            this.modelupdate_lbl.Location = new System.Drawing.Point(300, 154);
-            this.modelupdate_lbl.Name = "modelupdate_lbl";
-            this.modelupdate_lbl.Size = new System.Drawing.Size(35, 13);
-            this.modelupdate_lbl.TabIndex = 8;
-            this.modelupdate_lbl.Text = "label1";
             // 
             // feature_list_rtb
             // 
@@ -140,30 +131,40 @@
             this.modeltreeshow_rtb.TabIndex = 10;
             this.modeltreeshow_rtb.Text = "";
             // 
-            // button1
+            // exportmodel_btn
             // 
-            this.button1.Location = new System.Drawing.Point(407, 79);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(75, 23);
-            this.button1.TabIndex = 11;
-            this.button1.Text = "button1";
-            this.button1.UseVisualStyleBackColor = true;
-            this.button1.Click += new System.EventHandler(this.button1_Click);
+            this.exportmodel_btn.Location = new System.Drawing.Point(245, 40);
+            this.exportmodel_btn.Name = "exportmodel_btn";
+            this.exportmodel_btn.Size = new System.Drawing.Size(145, 23);
+            this.exportmodel_btn.TabIndex = 11;
+            this.exportmodel_btn.Text = "IMPORT MODEL";
+            this.exportmodel_btn.UseVisualStyleBackColor = true;
+            this.exportmodel_btn.Click += new System.EventHandler(this.exportmodel_btn_Click);
+            // 
+            // calculatenewfeature_btn
+            // 
+            this.calculatenewfeature_btn.Location = new System.Drawing.Point(449, 43);
+            this.calculatenewfeature_btn.Name = "calculatenewfeature_btn";
+            this.calculatenewfeature_btn.Size = new System.Drawing.Size(112, 23);
+            this.calculatenewfeature_btn.TabIndex = 12;
+            this.calculatenewfeature_btn.Text = "CALCULATE FETURE VALUE";
+            this.calculatenewfeature_btn.UseVisualStyleBackColor = true;
+            this.calculatenewfeature_btn.Click += new System.EventHandler(this.calculatenewfeature_btn_Click);
             // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(823, 381);
-            this.Controls.Add(this.button1);
+            this.Controls.Add(this.calculatenewfeature_btn);
+            this.Controls.Add(this.exportmodel_btn);
             this.Controls.Add(this.modeltreeshow_rtb);
             this.Controls.Add(this.feature_list_rtb);
-            this.Controls.Add(this.modelupdate_lbl);
             this.Controls.Add(this.chkfeaturetree_bttn);
             this.Controls.Add(this.updatemodel_bttn);
             this.Controls.Add(this.openmodel_lbl);
             this.Controls.Add(this.openmodel_bttn);
-            this.Controls.Add(this.openmodel_tb);
+            this.Controls.Add(this.openmodelpath_tb);
             this.Controls.Add(this.openfeaturemodel_lbl);
             this.Controls.Add(this.openfeaturemodel_bttn);
             this.Controls.Add(this.openfeaturemodel_tb);
@@ -180,14 +181,14 @@
         private System.Windows.Forms.Label openfeaturemodel_lbl;
         private System.Windows.Forms.Label openmodel_lbl;
         private System.Windows.Forms.Button openmodel_bttn;
-        private System.Windows.Forms.TextBox openmodel_tb;
+        private System.Windows.Forms.TextBox openmodelpath_tb;
         private System.Windows.Forms.FolderBrowserDialog modelFolderBrowserDialog;
         private System.Windows.Forms.Button updatemodel_bttn;
         private System.Windows.Forms.Button chkfeaturetree_bttn;
-        private System.Windows.Forms.Label modelupdate_lbl;
         private System.Windows.Forms.RichTextBox feature_list_rtb;
         private System.Windows.Forms.RichTextBox modeltreeshow_rtb;
-        private System.Windows.Forms.Button button1;
+        private System.Windows.Forms.Button exportmodel_btn;
+        private System.Windows.Forms.Button calculatenewfeature_btn;
     }
 }
 
