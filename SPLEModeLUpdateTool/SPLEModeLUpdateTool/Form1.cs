@@ -48,28 +48,34 @@ namespace SPLEModeLUpdateTool
 
         private void chkfeaturetree_bttn_Click(object sender, EventArgs e)
         {
-            int a = 1;
-            feature_list_rtb.Clear();
-            foreach (string item in FileProcess.readFeature(openfeaturemodel_tb.Text))
+            if (openfeaturemodel_tb.Text=="")
             {
-                feature_list_rtb.AppendText(a+". feature -> "+item+"\n");
-                a++;
+                MessageBox.Show("Lütfen feature model seçiniz");
+            }
+            else
+            {
+                int a = 1;
+                feature_list_rtb.Clear();
+                foreach (string item in FileProcess.readFeature(openfeaturemodel_tb.Text))
+                {
+                    feature_list_rtb.AppendText(a + ". feature -> " + item + "\n");
+                    a++;
+                }
+                calculatenewfeature_btn.Visible = true;
             }
            
         }
 
         private void updatemodel_bttn_Click(object sender, EventArgs e)
         {
-<<<<<<< HEAD
-           //bu kısım mcm den parse edilerek oluşturlan txt lerde value değerlerini güncelleyerek mcm'e tekrar yazdıracak.
-
+            //bu kısım mcm den parse edilerek oluşturlan txt lerde value değerlerini güncelleyerek mcm'e tekrar yazdıracak.
+            McmParser Xmlpars = new McmParser("C:\\Users\\huseyinor\\Desktop\\SPLE", "SmartTV.mcm");
+            Xmlpars.WriteXmlNewValues();
 
         }
 
         private void exportmodel_btn_Click(object sender, EventArgs e)
         {
-=======
->>>>>>> origin/master
             foreach (ModelTree item in ModelUpdate.CreateModelTree())
             {
                 McmParser Xmlpars = new McmParser("SPLE\\", item.parent+".mcm");
@@ -130,10 +136,6 @@ namespace SPLEModeLUpdateTool
             }
         }
 
-        private void button2_Click(object sender, EventArgs e)
-        {
-            McmParser Xmlpars = new McmParser("C:\\Users\\huseyinor\\Desktop\\SPLE", "SmartTV.mcm");
-            Xmlpars.WriteXmlNewValues();
-        }
+       
     }
 }
