@@ -7,7 +7,7 @@ using System.Threading.Tasks;
 
 namespace SPLEModeLUpdateTool
 {
-    class FeatureProcess
+   public class FeatureProcess
     {
         public static void updatetreeviaFeture(string path)
         {

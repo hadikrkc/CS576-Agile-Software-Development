@@ -58,3 +58,4 @@ C:\Users\abdulhadiki\Documents\GitHub\CS576-Agile-Software-Development\SPLEModeL
 C:\Users\abdulhadiki\Documents\GitHub\CS576-Agile-Software-Development\SPLEModeLUpdateTool\SPLEModeLUpdateTool\obj\Debug\SPLEModeLUpdateTool.Properties.Resources.resources
 C:\Users\abdulhadiki\Documents\GitHub\CS576-Agile-Software-Development\SPLEModeLUpdateTool\SPLEModeLUpdateTool\obj\Debug\SPLEModeLUpdateTool.csproj.GenerateResource.Cache
 C:\Users\abdulhadiki\Documents\GitHub\CS576-Agile-Software-Development\SPLEModeLUpdateTool\SPLEModeLUpdateTool\obj\Debug\SPLEModeLUpdateTool.csprojResolveAssemblyReference.cache
+C:\Users\Gönül\Desktop\AgileProje\CS576-Agile-Software-Development\SPLEModeLUpdateTool\SPLEModeLUpdateTool\obj\Debug\SPLEModeLUpdateTool.csprojResolveAssemblyReference.cache
