@@ -35,6 +35,9 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
+    <Reference Include="Microsoft.VisualStudio.QualityTools.UnitTestFramework, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
+      <Private>False</Private>
+    </Reference>
     <Reference Include="System" />
   </ItemGroup>
   <Choose>
@@ -43,15 +46,11 @@
         <Reference Include="Microsoft.VisualStudio.QualityTools.UnitTestFramework, Version=10.1.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL" />
       </ItemGroup>
     </When>
-    <Otherwise>
-      <ItemGroup>
-        <Reference Include="Microsoft.VisualStudio.QualityTools.UnitTestFramework">
-          <Private>False</Private>
-        </Reference>
-      </ItemGroup>
-    </Otherwise>
+    <Otherwise />
   </Choose>
   <ItemGroup>
+    <Compile Include="FeatureProcessTest.cs" />
+    <Compile Include="ModelUpdateTest.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="FileProcessTest.cs" />
     <Compile Include="McmParserTest.cs" />
@@ -61,6 +60,9 @@
       <Project>{443b9ac7-76fb-42e5-8d03-6acf9ef9c988}</Project>
       <Name>SPLEModeLUpdateTool</Name>
     </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <WCFMetadata Include="Service References\" />
   </ItemGroup>
   <Choose>
     <When Condition="'$(VisualStudioVersion)' == '10.0' And '$(IsCodedUITest)' == 'True'">

@@ -7,7 +7,7 @@ using System.Threading.Tasks;
 
 namespace SPLEModeLUpdateTool
 {
-    class ModelUpdate
+    public class ModelUpdate
     {
         
         public static List<ModelTree> CreateModelTree()

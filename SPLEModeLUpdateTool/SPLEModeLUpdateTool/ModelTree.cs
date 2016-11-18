@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace SPLEModeLUpdateTool
 {
-    class ModelTree
+    public class ModelTree
     {
         public string parent { set; get; }
         //public List<string> childs = new List<string>();
