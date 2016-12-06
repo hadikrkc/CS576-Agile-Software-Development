@@ -102,5 +102,12 @@ namespace SPLEModeLUpdateTool
             return flag;
 
         }
+        public static void CreateNewTreeValue()
+        {
+            if (System.IO.Directory.Exists("modelparserresult"))
+            {
+                    
+            }
+        }
     }
 }

@@ -68,10 +68,19 @@ namespace SPLEModeLUpdateTool
 
         private void updatemodel_bttn_Click(object sender, EventArgs e)
         {
+            if (File.Exists("txtfolder\\model_subtree_guncel.txt"))
+                File.Delete("txtfolder\\model_subtree_guncel.txt");
+            flag = FeatureProcess.updatetreeviaFeture(openfeaturemodel_tb.Text);
+            ModelUpdate.updateModel();
             //bu kısım mcm den parse edilerek oluşturlan txt lerde value değerlerini güncelleyerek mcm'e tekrar yazdıracak.
-            McmParser Xmlpars = new McmParser("C:\\Users\\huseyinor\\Desktop\\SPLE", "SmartTV.mcm");
-            Xmlpars.WriteXmlNewValues();
+            foreach (ModelTree item in ModelUpdate.CreateModelTree())
+            {
+                McmParser Xmlpars = new McmParser("SPLE\\", item.parent + ".mcm");
+                Xmlpars.WriteXmlNewValues();
+            }
+            modeltreeshow_rtb.Clear();
 
+            modeltreeshow_rtb.AppendText(File.ReadAllText("txtfolder\\model_subtree_guncel.txt"));
         }
 
         private void exportmodel_btn_Click(object sender, EventArgs e)
@@ -92,11 +101,7 @@ namespace SPLEModeLUpdateTool
 
         private void calculatenewfeature_btn_Click(object sender, EventArgs e)
         {
-            modeltreeshow_rtb.Clear();
-            if (File.Exists("txtfolder\\model_subtree_guncel.txt"))
-                File.Delete("txtfolder\\model_subtree_guncel.txt");
-            flag=FeatureProcess.updatetreeviaFeture(openfeaturemodel_tb.Text);
-            modeltreeshow_rtb.AppendText(File.ReadAllText("txtfolder\\model_subtree_guncel.txt"));
+           
         }
 
         public void eskifonk_calculatenewfeature_btn_Click()

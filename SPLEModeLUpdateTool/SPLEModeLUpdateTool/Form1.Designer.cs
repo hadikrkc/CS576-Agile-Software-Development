@@ -42,9 +42,9 @@
             this.exportmodel_btn = new System.Windows.Forms.Button();
             this.calculatenewfeature_btn = new System.Windows.Forms.Button();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
-            this.status_rtb = new System.Windows.Forms.RichTextBox();
-            this.status_lbl = new System.Windows.Forms.Label();
             this.consistence_btn = new System.Windows.Forms.Button();
+            this.status_lbl = new System.Windows.Forms.Label();
+            this.status_rtb = new System.Windows.Forms.RichTextBox();
             this.groupBox1.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -102,10 +102,9 @@
             // 
             // updatemodel_bttn
             // 
-            this.updatemodel_bttn.Enabled = false;
-            this.updatemodel_bttn.Location = new System.Drawing.Point(710, 161);
+            this.updatemodel_bttn.Location = new System.Drawing.Point(443, 114);
             this.updatemodel_bttn.Name = "updatemodel_bttn";
-            this.updatemodel_bttn.Size = new System.Drawing.Size(124, 23);
+            this.updatemodel_bttn.Size = new System.Drawing.Size(75, 44);
             this.updatemodel_bttn.TabIndex = 6;
             this.updatemodel_bttn.Text = "UPDATE MODEL";
             this.updatemodel_bttn.UseVisualStyleBackColor = true;
@@ -164,6 +163,7 @@
             this.groupBox1.Controls.Add(this.status_lbl);
             this.groupBox1.Controls.Add(this.status_rtb);
             this.groupBox1.Controls.Add(this.openmodelpath_tb);
+            this.groupBox1.Controls.Add(this.updatemodel_bttn);
             this.groupBox1.Controls.Add(this.openmodel_lbl);
             this.groupBox1.Controls.Add(this.exportmodel_btn);
             this.groupBox1.Controls.Add(this.openfeaturemodel_lbl);
@@ -178,13 +178,15 @@
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "SPLE Model Update";
             // 
-            // status_rtb
+            // consistence_btn
             // 
-            this.status_rtb.Location = new System.Drawing.Point(10, 149);
-            this.status_rtb.Name = "status_rtb";
-            this.status_rtb.Size = new System.Drawing.Size(253, 62);
-            this.status_rtb.TabIndex = 12;
-            this.status_rtb.Text = "";
+            this.consistence_btn.Location = new System.Drawing.Point(443, 43);
+            this.consistence_btn.Name = "consistence_btn";
+            this.consistence_btn.Size = new System.Drawing.Size(75, 44);
+            this.consistence_btn.TabIndex = 14;
+            this.consistence_btn.Text = "Consistence Check";
+            this.consistence_btn.UseVisualStyleBackColor = true;
+            this.consistence_btn.Click += new System.EventHandler(this.consistence_btn_Click);
             // 
             // status_lbl
             // 
@@ -195,15 +197,13 @@
             this.status_lbl.TabIndex = 13;
             this.status_lbl.Text = "STATUS";
             // 
-            // consistence_btn
+            // status_rtb
             // 
-            this.consistence_btn.Location = new System.Drawing.Point(443, 37);
-            this.consistence_btn.Name = "consistence_btn";
-            this.consistence_btn.Size = new System.Drawing.Size(75, 44);
-            this.consistence_btn.TabIndex = 14;
-            this.consistence_btn.Text = "Consistence Check";
-            this.consistence_btn.UseVisualStyleBackColor = true;
-            this.consistence_btn.Click += new System.EventHandler(this.consistence_btn_Click);
+            this.status_rtb.Location = new System.Drawing.Point(10, 149);
+            this.status_rtb.Name = "status_rtb";
+            this.status_rtb.Size = new System.Drawing.Size(253, 62);
+            this.status_rtb.TabIndex = 12;
+            this.status_rtb.Text = "";
             // 
             // Form1
             // 
@@ -214,7 +214,6 @@
             this.Controls.Add(this.calculatenewfeature_btn);
             this.Controls.Add(this.modeltreeshow_rtb);
             this.Controls.Add(this.feature_list_rtb);
-            this.Controls.Add(this.updatemodel_bttn);
             this.Name = "Form1";
             this.Text = "SPLE Model Update";
             this.groupBox1.ResumeLayout(false);
