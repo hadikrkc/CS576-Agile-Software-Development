@@ -19,7 +19,7 @@ namespace SPLEModeLUpdateTool
             if (System.IO.File.Exists("txtfolder\\model_subtree_guncel.txt"))
                 System.IO.File.Delete("txtfolder\\model_subtree_guncel.txt");
         }
-
+        private bool flag = true;
         private void openfeaturemodel_bttn_Click(object sender, EventArgs e)
         {
             OpenFileDialog fdlg = new OpenFileDialog();
@@ -50,7 +50,7 @@ namespace SPLEModeLUpdateTool
         {
             if (openfeaturemodel_tb.Text=="")
             {
-                MessageBox.Show("Lütfen feature model seçiniz");
+                MessageBox.Show("Please Select feature Model!");
             }
             else
             {
@@ -76,12 +76,18 @@ namespace SPLEModeLUpdateTool
 
         private void exportmodel_btn_Click(object sender, EventArgs e)
         {
-            foreach (ModelTree item in ModelUpdate.CreateModelTree())
+            if (openmodelpath_tb.Text == "")
             {
-                McmParser Xmlpars = new McmParser("SPLE\\", item.parent+".mcm");
-                Xmlpars.XmlParsing();
+                MessageBox.Show("Please Select Matelo Project!");
             }
-            
+            else
+            {
+                foreach (ModelTree item in ModelUpdate.CreateModelTree())
+                {
+                    McmParser Xmlpars = new McmParser("SPLE\\", item.parent + ".mcm");
+                    Xmlpars.XmlParsing();
+                }
+            }
         }
 
         private void calculatenewfeature_btn_Click(object sender, EventArgs e)
@@ -89,7 +95,7 @@ namespace SPLEModeLUpdateTool
             modeltreeshow_rtb.Clear();
             if (File.Exists("txtfolder\\model_subtree_guncel.txt"))
                 File.Delete("txtfolder\\model_subtree_guncel.txt");
-            FeatureProcess.updatetreeviaFeture(openfeaturemodel_tb.Text);
+            flag=FeatureProcess.updatetreeviaFeture(openfeaturemodel_tb.Text);
             modeltreeshow_rtb.AppendText(File.ReadAllText("txtfolder\\model_subtree_guncel.txt"));
         }
 
@@ -136,6 +142,18 @@ namespace SPLEModeLUpdateTool
             }
         }
 
-       
+        private void consistence_btn_Click(object sender, EventArgs e)
+        {
+            status_rtb.Clear();
+            flag = FeatureProcess.consistenceCheck(openfeaturemodel_tb.Text);
+            if (flag)
+            {
+                status_rtb.AppendText("SPLE Tree fetures and Model features are consistence");
+            }
+            else
+            {
+                status_rtb.AppendText("SPLE Tree fetures and Model features are not consistence");
+            }
+        }
     }
 }

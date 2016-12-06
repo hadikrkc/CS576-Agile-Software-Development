@@ -1,21 +1,18 @@
-﻿using System;
-using System.Collections.Generic;
-using System.IO;
+﻿using System.IO;
 using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
 namespace SPLEModeLUpdateTool
 {
    public class FeatureProcess
     {
-        public static void updatetreeviaFeture(string path)
+        public static bool updatetreeviaFeture(string path)
         {
             string[] feature_arr = FileProcess.readFeature(path);
             string[] text = File.ReadAllLines("txtfolder\\model_subtree.txt");
             string parent_child;
             string[] childs_arr;
             int c = 0;
+            bool flag = true;
             for (int i = 0; i < text.Length; i++)
             {
                 parent_child = text[i].Split(':').ElementAt(0);
@@ -48,10 +45,18 @@ namespace SPLEModeLUpdateTool
                                 {
                                     chilstr = chilstr + childs_arr[k] + ",";
                                 }
+                                else
+                                {
+                                    flag = false;
+                                }
                             }
                         }
                         c = j;
                         break;
+                    }
+                    else
+                    {
+                        flag = false;
                     }
                 }
                 if (parent_child != "")
@@ -60,6 +65,7 @@ namespace SPLEModeLUpdateTool
                 }
 
             }
+            return flag;
         }
         public static void CreateLogFile(string b)
         {
@@ -74,6 +80,27 @@ namespace SPLEModeLUpdateTool
 
             //  Dosya.Write(b);
             //Dosya.Close();
+        }
+
+        public static bool consistenceCheck(string path)
+        {
+            bool flag = true;
+            string[] feature_arr = FileProcess.readFeature(path);
+            string text = File.ReadAllText("txtfolder\\model_subtree.txt").ToLower();
+            for (int i = 0; i < feature_arr.Length; i++)
+            {
+               
+                    if (!(text.Contains(feature_arr[i].Split(',').ElementAt(0).ToLower())))
+                    {
+                        flag = false;
+                        break;
+                    } 
+              
+               
+            }
+
+            return flag;
+
         }
     }
 }
