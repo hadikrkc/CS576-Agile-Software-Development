@@ -61,25 +61,36 @@ namespace SPLEModeLUpdateTool
                     feature_list_rtb.AppendText(a + ". feature -> " + item + "\n");
                     a++;
                 }
+                //status_rtb.Clear();
+                status_rtb.AppendText("*** Feature tree imported ***\n");
             }
+            info_pnl.Visible = true;
            
         }
 
         private void updatemodel_bttn_Click(object sender, EventArgs e)
         {
-            if (File.Exists("txtfolder\\model_subtree_guncel.txt"))
-                File.Delete("txtfolder\\model_subtree_guncel.txt");
-            flag = FeatureProcess.updatetreeviaFeture(openfeaturemodel_tb.Text);
-            ModelUpdate.updateModel();
-            //bu kısım mcm den parse edilerek oluşturlan txt lerde value değerlerini güncelleyerek mcm'e tekrar yazdıracak.
-            foreach (ModelTree item in ModelUpdate.CreateModelTree())
+            if (status_rtb.Text.Contains("Feature tree imported") && status_rtb.Text.Contains("Model imported"))
             {
-                McmParser Xmlpars = new McmParser(openmodelpath_tb.Text, item.parent + ".mcm");
-                Xmlpars.WriteXmlNewValues();
+                if (File.Exists("txtfolder\\model_subtree_guncel.txt"))
+                    File.Delete("txtfolder\\model_subtree_guncel.txt");
+                flag = FeatureProcess.updatetreeviaFeture(openfeaturemodel_tb.Text);
+                ModelUpdate.updateModel();
+                //bu kısım mcm den parse edilerek oluşturlan txt lerde value değerlerini güncelleyerek mcm'e tekrar yazdıracak.
+                foreach (ModelTree item in ModelUpdate.CreateModelTree())
+                {
+                    McmParser Xmlpars = new McmParser(openmodelpath_tb.Text, item.parent + ".mcm");
+                    Xmlpars.WriteXmlNewValues();
+                }
+                //status_rtb.Clear();
+                status_rtb.AppendText("*** Model updated ***\n");
+                button1.Enabled = true;
             }
-            modeltreeshow_rtb.Clear();
-
-            modeltreeshow_rtb.AppendText(File.ReadAllText("txtfolder\\model_subtree_guncel.txt"));
+            else
+            {
+                MessageBox.Show("Please Import Feature Model and MAtelo Model!");
+            }
+           
         }
 
         private void exportmodel_btn_Click(object sender, EventArgs e)
@@ -95,14 +106,11 @@ namespace SPLEModeLUpdateTool
                     McmParser Xmlpars = new McmParser(openmodelpath_tb.Text, item.parent + ".mcm");
                     Xmlpars.XmlParsing();
                 }
+                //status_rtb.Clear();
+                status_rtb.AppendText("*** Model imported ***\n");
+
             }
         }
-
-        private void calculatenewfeature_btn_Click(object sender, EventArgs e)
-        {
-           
-        }
-
         public void eskifonk_calculatenewfeature_btn_Click()
         {
             string[] feature_arr = FileProcess.readFeature(openfeaturemodel_tb.Text);
@@ -148,16 +156,33 @@ namespace SPLEModeLUpdateTool
 
         private void consistence_btn_Click(object sender, EventArgs e)
         {
-            status_rtb.Clear();
-            flag = FeatureProcess.consistenceCheck(openfeaturemodel_tb.Text);
-            if (flag)
+            if (openmodelpath_tb.Text!="" && openfeaturemodel_tb.Text!="")
             {
-                status_rtb.AppendText("SPLE Tree fetures and Model features are consistence");
+                //status_rtb.Clear();
+                flag = FeatureProcess.consistenceCheck(openfeaturemodel_tb.Text);
+                if (flag)
+                {
+                    status_rtb.AppendText("*** SPLE Tree fetures and Model features are consistence\n");
+                }
+                else
+                {
+                    status_rtb.AppendText("*** SPLE Tree fetures and Model features are not consistence\n");
+                }
             }
             else
             {
-                status_rtb.AppendText("SPLE Tree fetures and Model features are not consistence");
+                MessageBox.Show("Please Select Feature Model and Matelo Model!");
             }
+           
         }
+
+        private void button1_Click(object sender, EventArgs e)
+        { 
+            modeltreeshow_rtb.Clear();
+            modeltreeshow_rtb.AppendText(File.ReadAllText("txtfolder\\model_subtree_guncel.txt"));
+            label2.Visible = true;
+            modeltreeshow_rtb.Visible = true;
+        }
+
     }
 }

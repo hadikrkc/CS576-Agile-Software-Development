@@ -41,11 +41,15 @@
             this.modeltreeshow_rtb = new System.Windows.Forms.RichTextBox();
             this.exportmodel_btn = new System.Windows.Forms.Button();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
+            this.button1 = new System.Windows.Forms.Button();
             this.consistence_btn = new System.Windows.Forms.Button();
             this.status_lbl = new System.Windows.Forms.Label();
             this.status_rtb = new System.Windows.Forms.RichTextBox();
-            this.button1 = new System.Windows.Forms.Button();
+            this.label1 = new System.Windows.Forms.Label();
+            this.label2 = new System.Windows.Forms.Label();
+            this.info_pnl = new System.Windows.Forms.Panel();
             this.groupBox1.SuspendLayout();
+            this.info_pnl.SuspendLayout();
             this.SuspendLayout();
             // 
             // openfeaturemodel_tb
@@ -122,19 +126,20 @@
             // 
             // feature_list_rtb
             // 
-            this.feature_list_rtb.Location = new System.Drawing.Point(29, 259);
+            this.feature_list_rtb.Location = new System.Drawing.Point(6, 35);
             this.feature_list_rtb.Name = "feature_list_rtb";
-            this.feature_list_rtb.Size = new System.Drawing.Size(260, 118);
+            this.feature_list_rtb.Size = new System.Drawing.Size(260, 130);
             this.feature_list_rtb.TabIndex = 9;
             this.feature_list_rtb.Text = "";
             // 
             // modeltreeshow_rtb
             // 
-            this.modeltreeshow_rtb.Location = new System.Drawing.Point(303, 259);
+            this.modeltreeshow_rtb.Location = new System.Drawing.Point(298, 35);
             this.modeltreeshow_rtb.Name = "modeltreeshow_rtb";
-            this.modeltreeshow_rtb.Size = new System.Drawing.Size(260, 118);
+            this.modeltreeshow_rtb.Size = new System.Drawing.Size(260, 130);
             this.modeltreeshow_rtb.TabIndex = 10;
             this.modeltreeshow_rtb.Text = "";
+            this.modeltreeshow_rtb.Visible = false;
             // 
             // exportmodel_btn
             // 
@@ -168,6 +173,17 @@
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "SPLE Model Update";
             // 
+            // button1
+            // 
+            this.button1.Enabled = false;
+            this.button1.Location = new System.Drawing.Point(443, 164);
+            this.button1.Name = "button1";
+            this.button1.Size = new System.Drawing.Size(75, 44);
+            this.button1.TabIndex = 15;
+            this.button1.Text = "Show New Tree";
+            this.button1.UseVisualStyleBackColor = true;
+            this.button1.Click += new System.EventHandler(this.button1_Click);
+            // 
             // consistence_btn
             // 
             this.consistence_btn.Location = new System.Drawing.Point(443, 43);
@@ -181,7 +197,7 @@
             // status_lbl
             // 
             this.status_lbl.AutoSize = true;
-            this.status_lbl.Location = new System.Drawing.Point(10, 130);
+            this.status_lbl.Location = new System.Drawing.Point(7, 117);
             this.status_lbl.Name = "status_lbl";
             this.status_lbl.Size = new System.Drawing.Size(50, 13);
             this.status_lbl.TabIndex = 13;
@@ -189,33 +205,56 @@
             // 
             // status_rtb
             // 
-            this.status_rtb.Location = new System.Drawing.Point(10, 149);
+            this.status_rtb.Location = new System.Drawing.Point(10, 133);
             this.status_rtb.Name = "status_rtb";
-            this.status_rtb.Size = new System.Drawing.Size(253, 62);
+            this.status_rtb.Size = new System.Drawing.Size(253, 78);
             this.status_rtb.TabIndex = 12;
             this.status_rtb.Text = "";
             // 
-            // button1
+            // label1
             // 
-            this.button1.Location = new System.Drawing.Point(443, 164);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(75, 44);
-            this.button1.TabIndex = 15;
-            this.button1.Text = "Show New Tree";
-            this.button1.UseVisualStyleBackColor = true;
+            this.label1.AutoSize = true;
+            this.label1.Location = new System.Drawing.Point(7, 14);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(75, 13);
+            this.label1.TabIndex = 14;
+            this.label1.Text = "Feature Model";
+            // 
+            // label2
+            // 
+            this.label2.AutoSize = true;
+            this.label2.Location = new System.Drawing.Point(295, 14);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(121, 13);
+            this.label2.TabIndex = 15;
+            this.label2.Text = "New Matelo Model Tree";
+            this.label2.Visible = false;
+            // 
+            // info_pnl
+            // 
+            this.info_pnl.Controls.Add(this.feature_list_rtb);
+            this.info_pnl.Controls.Add(this.label2);
+            this.info_pnl.Controls.Add(this.modeltreeshow_rtb);
+            this.info_pnl.Controls.Add(this.label1);
+            this.info_pnl.Location = new System.Drawing.Point(20, 245);
+            this.info_pnl.Name = "info_pnl";
+            this.info_pnl.Size = new System.Drawing.Size(563, 168);
+            this.info_pnl.TabIndex = 16;
+            this.info_pnl.Visible = false;
             // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(601, 415);
+            this.Controls.Add(this.info_pnl);
             this.Controls.Add(this.groupBox1);
-            this.Controls.Add(this.modeltreeshow_rtb);
-            this.Controls.Add(this.feature_list_rtb);
             this.Name = "Form1";
             this.Text = "SPLE Model Update";
             this.groupBox1.ResumeLayout(false);
             this.groupBox1.PerformLayout();
+            this.info_pnl.ResumeLayout(false);
+            this.info_pnl.PerformLayout();
             this.ResumeLayout(false);
 
         }
@@ -238,6 +277,9 @@
         private System.Windows.Forms.RichTextBox status_rtb;
         private System.Windows.Forms.Button consistence_btn;
         private System.Windows.Forms.Button button1;
+        private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.Label label2;
+        private System.Windows.Forms.Panel info_pnl;
     }
 }
 
