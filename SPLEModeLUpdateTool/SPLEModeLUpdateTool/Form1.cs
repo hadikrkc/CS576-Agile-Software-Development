@@ -61,7 +61,6 @@ namespace SPLEModeLUpdateTool
                     feature_list_rtb.AppendText(a + ". feature -> " + item + "\n");
                     a++;
                 }
-                calculatenewfeature_btn.Visible = true;
             }
            
         }
@@ -75,7 +74,7 @@ namespace SPLEModeLUpdateTool
             //bu kısım mcm den parse edilerek oluşturlan txt lerde value değerlerini güncelleyerek mcm'e tekrar yazdıracak.
             foreach (ModelTree item in ModelUpdate.CreateModelTree())
             {
-                McmParser Xmlpars = new McmParser("SPLE\\", item.parent + ".mcm");
+                McmParser Xmlpars = new McmParser(openmodelpath_tb.Text, item.parent + ".mcm");
                 Xmlpars.WriteXmlNewValues();
             }
             modeltreeshow_rtb.Clear();
@@ -93,7 +92,7 @@ namespace SPLEModeLUpdateTool
             {
                 foreach (ModelTree item in ModelUpdate.CreateModelTree())
                 {
-                    McmParser Xmlpars = new McmParser("SPLE\\", item.parent + ".mcm");
+                    McmParser Xmlpars = new McmParser(openmodelpath_tb.Text, item.parent + ".mcm");
                     Xmlpars.XmlParsing();
                 }
             }

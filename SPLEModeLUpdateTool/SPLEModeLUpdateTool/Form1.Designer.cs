@@ -40,11 +40,11 @@
             this.feature_list_rtb = new System.Windows.Forms.RichTextBox();
             this.modeltreeshow_rtb = new System.Windows.Forms.RichTextBox();
             this.exportmodel_btn = new System.Windows.Forms.Button();
-            this.calculatenewfeature_btn = new System.Windows.Forms.Button();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
             this.consistence_btn = new System.Windows.Forms.Button();
             this.status_lbl = new System.Windows.Forms.Label();
             this.status_rtb = new System.Windows.Forms.RichTextBox();
+            this.button1 = new System.Windows.Forms.Button();
             this.groupBox1.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -102,7 +102,7 @@
             // 
             // updatemodel_bttn
             // 
-            this.updatemodel_bttn.Location = new System.Drawing.Point(443, 114);
+            this.updatemodel_bttn.Location = new System.Drawing.Point(443, 101);
             this.updatemodel_bttn.Name = "updatemodel_bttn";
             this.updatemodel_bttn.Size = new System.Drawing.Size(75, 44);
             this.updatemodel_bttn.TabIndex = 6;
@@ -122,9 +122,9 @@
             // 
             // feature_list_rtb
             // 
-            this.feature_list_rtb.Location = new System.Drawing.Point(20, 259);
+            this.feature_list_rtb.Location = new System.Drawing.Point(29, 259);
             this.feature_list_rtb.Name = "feature_list_rtb";
-            this.feature_list_rtb.Size = new System.Drawing.Size(237, 110);
+            this.feature_list_rtb.Size = new System.Drawing.Size(260, 118);
             this.feature_list_rtb.TabIndex = 9;
             this.feature_list_rtb.Text = "";
             // 
@@ -132,7 +132,7 @@
             // 
             this.modeltreeshow_rtb.Location = new System.Drawing.Point(303, 259);
             this.modeltreeshow_rtb.Name = "modeltreeshow_rtb";
-            this.modeltreeshow_rtb.Size = new System.Drawing.Size(373, 110);
+            this.modeltreeshow_rtb.Size = new System.Drawing.Size(260, 118);
             this.modeltreeshow_rtb.TabIndex = 10;
             this.modeltreeshow_rtb.Text = "";
             // 
@@ -146,19 +146,9 @@
             this.exportmodel_btn.UseVisualStyleBackColor = true;
             this.exportmodel_btn.Click += new System.EventHandler(this.exportmodel_btn_Click);
             // 
-            // calculatenewfeature_btn
-            // 
-            this.calculatenewfeature_btn.Location = new System.Drawing.Point(710, 190);
-            this.calculatenewfeature_btn.Name = "calculatenewfeature_btn";
-            this.calculatenewfeature_btn.Size = new System.Drawing.Size(124, 23);
-            this.calculatenewfeature_btn.TabIndex = 12;
-            this.calculatenewfeature_btn.Text = "SHOW NEW TREE";
-            this.calculatenewfeature_btn.UseVisualStyleBackColor = true;
-            this.calculatenewfeature_btn.Visible = false;
-            this.calculatenewfeature_btn.Click += new System.EventHandler(this.calculatenewfeature_btn_Click);
-            // 
             // groupBox1
             // 
+            this.groupBox1.Controls.Add(this.button1);
             this.groupBox1.Controls.Add(this.consistence_btn);
             this.groupBox1.Controls.Add(this.status_lbl);
             this.groupBox1.Controls.Add(this.status_rtb);
@@ -205,13 +195,21 @@
             this.status_rtb.TabIndex = 12;
             this.status_rtb.Text = "";
             // 
+            // button1
+            // 
+            this.button1.Location = new System.Drawing.Point(443, 164);
+            this.button1.Name = "button1";
+            this.button1.Size = new System.Drawing.Size(75, 44);
+            this.button1.TabIndex = 15;
+            this.button1.Text = "Show New Tree";
+            this.button1.UseVisualStyleBackColor = true;
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(993, 415);
+            this.ClientSize = new System.Drawing.Size(601, 415);
             this.Controls.Add(this.groupBox1);
-            this.Controls.Add(this.calculatenewfeature_btn);
             this.Controls.Add(this.modeltreeshow_rtb);
             this.Controls.Add(this.feature_list_rtb);
             this.Name = "Form1";
@@ -235,11 +233,11 @@
         private System.Windows.Forms.RichTextBox feature_list_rtb;
         private System.Windows.Forms.RichTextBox modeltreeshow_rtb;
         private System.Windows.Forms.Button exportmodel_btn;
-        private System.Windows.Forms.Button calculatenewfeature_btn;
         private System.Windows.Forms.GroupBox groupBox1;
         private System.Windows.Forms.Label status_lbl;
         private System.Windows.Forms.RichTextBox status_rtb;
         private System.Windows.Forms.Button consistence_btn;
+        private System.Windows.Forms.Button button1;
     }
 }
 
