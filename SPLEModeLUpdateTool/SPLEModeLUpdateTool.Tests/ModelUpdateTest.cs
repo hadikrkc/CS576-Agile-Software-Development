@@ -17,11 +17,11 @@ namespace SPLEModeLUpdateTool.Tests
         {
             if (File.Exists("txtfolder\\model_subtree_guncel.txt"))
             {
-                Assert.IsTrue(true);
+                Assert.IsTrue(false);
             }
             else
             {
-                Assert.IsTrue(false);
+                Assert.IsTrue(true);
             }
              
           
