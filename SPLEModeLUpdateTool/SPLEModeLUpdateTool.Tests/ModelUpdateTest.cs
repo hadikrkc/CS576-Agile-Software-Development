@@ -15,6 +15,7 @@ namespace SPLEModeLUpdateTool.Tests
         [TestMethod()]
         public void Test_CreateModelTreeTest()
         {
+<<<<<<< HEAD
             if (File.Exists("txtfolder\\model_subtree_guncel.txt"))
             {
                 Assert.IsTrue(false);
@@ -24,6 +25,9 @@ namespace SPLEModeLUpdateTool.Tests
                 Assert.IsTrue(true);
             }
              
+=======
+         
+>>>>>>> origin/master
           
            
         }
