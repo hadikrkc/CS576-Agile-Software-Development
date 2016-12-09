@@ -189,5 +189,9 @@ namespace SPLEModeLUpdateTool
             modeltreeshow_rtb.Visible = true;
         }
 
+        private void openmatelo_btn_Click(object sender, EventArgs e)
+        {
+            System.Diagnostics.Process.Start("C:\\All4tec\\MaTeLo\\MaTeLo 5.4.1 Fourier S24\\Matelo.exe");    
+        }
     }
 }

@@ -48,6 +48,7 @@
             this.label1 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.info_pnl = new System.Windows.Forms.Panel();
+            this.openmatelo_btn = new System.Windows.Forms.Button();
             this.groupBox1.SuspendLayout();
             this.info_pnl.SuspendLayout();
             this.SuspendLayout();
@@ -153,6 +154,7 @@
             // 
             // groupBox1
             // 
+            this.groupBox1.Controls.Add(this.openmatelo_btn);
             this.groupBox1.Controls.Add(this.button1);
             this.groupBox1.Controls.Add(this.consistence_btn);
             this.groupBox1.Controls.Add(this.status_lbl);
@@ -176,7 +178,7 @@
             // button1
             // 
             this.button1.Enabled = false;
-            this.button1.Location = new System.Drawing.Point(443, 164);
+            this.button1.Location = new System.Drawing.Point(443, 151);
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(75, 44);
             this.button1.TabIndex = 15;
@@ -242,6 +244,17 @@
             this.info_pnl.TabIndex = 16;
             this.info_pnl.Visible = false;
             // 
+            // openmatelo_btn
+            // 
+            this.openmatelo_btn.Location = new System.Drawing.Point(283, 133);
+            this.openmatelo_btn.Name = "openmatelo_btn";
+            this.openmatelo_btn.Size = new System.Drawing.Size(75, 62);
+            this.openmatelo_btn.TabIndex = 16;
+            this.openmatelo_btn.Text = "OPEN MaTeLo";
+            this.openmatelo_btn.UseVisualStyleBackColor = true;
+            this.openmatelo_btn.Visible = false;
+            this.openmatelo_btn.Click += new System.EventHandler(this.openmatelo_btn_Click);
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -280,6 +293,7 @@
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Panel info_pnl;
+        private System.Windows.Forms.Button openmatelo_btn;
     }
 }
 
