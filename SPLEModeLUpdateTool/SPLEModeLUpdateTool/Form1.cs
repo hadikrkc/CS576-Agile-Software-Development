@@ -79,7 +79,7 @@ namespace SPLEModeLUpdateTool
                 //bu kısım mcm den parse edilerek oluşturlan txt lerde value değerlerini güncelleyerek mcm'e tekrar yazdıracak.
                 foreach (ModelTree item in ModelUpdate.CreateModelTree())
                 {
-                    McmParser Xmlpars = new McmParser(openmodelpath_tb.Text, item.parent + ".mcm");
+                    McmParser Xmlpars = new McmParser(openmodelpath_tb.Text, FileProcess.RemoveSpecialCharacters(item.parent) + ".mcm");
                     Xmlpars.WriteXmlNewValues();
                 }
                 //status_rtb.Clear();
@@ -103,7 +103,7 @@ namespace SPLEModeLUpdateTool
             {
                 foreach (ModelTree item in ModelUpdate.CreateModelTree())
                 {
-                    McmParser Xmlpars = new McmParser(openmodelpath_tb.Text, item.parent + ".mcm");
+                    McmParser Xmlpars = new McmParser(openmodelpath_tb.Text, FileProcess.RemoveSpecialCharacters(item.parent) + ".mcm");
                     Xmlpars.XmlParsing();
                 }
                 //status_rtb.Clear();

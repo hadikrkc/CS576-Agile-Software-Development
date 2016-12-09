@@ -1,3 +1,0 @@
-Video Play,_TC68gGSIEeaUEaOmasQHEw,0.334
-Audio Play,_TFRs8GSIEeaUEaOmasQHEw,0.333
-Picture Preview,_THzcgGSIEeaUEaOmasQHEw,0.333

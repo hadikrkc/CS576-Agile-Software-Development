@@ -1,4 +1,0 @@
-1,_fnTxgGSFEeaUEaOmasQHEw,0.250
-2,_fpSugGSFEeaUEaOmasQHEw,0.250
-3,_fra1cGSFEeaUEaOmasQHEw,0.250
-4,_fvUeAGSFEeaUEaOmasQHEw,0.250

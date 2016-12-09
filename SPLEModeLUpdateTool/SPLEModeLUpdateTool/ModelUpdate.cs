@@ -50,7 +50,7 @@ namespace SPLEModeLUpdateTool
                 parent_child = line.Split(':');
                 childs_arr = parent_child[1].Split(',');
                 int a = 0;
-                string[] value = File.ReadAllLines("modelparserresult\\" + parent_child[0] + ".txt");
+                string[] value = File.ReadAllLines("modelparserresult\\" + FileProcess.RemoveSpecialCharacters(parent_child[0]) + ".txt");
                 for (int k = 0; k < value.Length; k++)
                 {
                     string tmp = value[k].Split(',').ElementAt(0) + "," + value[k].Split(',').ElementAt(1) + ",0";
@@ -71,7 +71,7 @@ namespace SPLEModeLUpdateTool
                     }
 
                 }
-                File.WriteAllLines("modelparserresult\\" + parent_child[0] + ".txt", value);
+                File.WriteAllLines("modelparserresult\\" + FileProcess.RemoveSpecialCharacters(parent_child[0]) + ".txt", value);
                 /*
                  childvalue_ = 1 / Convert.ToDouble(childs_arr.Count());
                  ModelTree modeltree = new ModelTree();
