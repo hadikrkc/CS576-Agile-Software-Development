@@ -19,7 +19,7 @@ namespace SPLEModeLUpdateTool
             if (System.IO.File.Exists("txtfolder\\model_subtree_guncel.txt"))
                 System.IO.File.Delete("txtfolder\\model_subtree_guncel.txt");
         }
-        private bool flag = true;
+        private bool flag;
         private void openfeaturemodel_bttn_Click(object sender, EventArgs e)
         {
             OpenFileDialog fdlg = new OpenFileDialog();
@@ -70,21 +70,26 @@ namespace SPLEModeLUpdateTool
 
         private void updatemodel_bttn_Click(object sender, EventArgs e)
         {
+           
             if (status_rtb.Text.Contains("Feature tree imported") && status_rtb.Text.Contains("Model imported"))
             {
-                if (File.Exists("txtfolder\\model_subtree_guncel.txt"))
-                    File.Delete("txtfolder\\model_subtree_guncel.txt");
-                flag = FeatureProcess.updatetreeviaFeture(openfeaturemodel_tb.Text);
-                ModelUpdate.updateModel();
-                //bu kısım mcm den parse edilerek oluşturlan txt lerde value değerlerini güncelleyerek mcm'e tekrar yazdıracak.
-                foreach (ModelTree item in ModelUpdate.CreateModelTree())
+                if (flag=true)
                 {
-                    McmParser Xmlpars = new McmParser(openmodelpath_tb.Text, FileProcess.RemoveSpecialCharacters(item.parent) + ".mcm");
-                    Xmlpars.WriteXmlNewValues();
+                    if (File.Exists("txtfolder\\model_subtree_guncel.txt"))
+                        File.Delete("txtfolder\\model_subtree_guncel.txt");
+                    flag = FeatureProcess.updatetreeviaFeture(openfeaturemodel_tb.Text);
+                    ModelUpdate.updateModel();
+                    //bu kısım mcm den parse edilerek oluşturlan txt lerde value değerlerini güncelleyerek mcm'e tekrar yazdıracak.
+                    foreach (ModelTree item in ModelUpdate.CreateModelTree())
+                    {
+                        McmParser Xmlpars = new McmParser(openmodelpath_tb.Text, FileProcess.RemoveSpecialCharacters(item.parent) + ".mcm");
+                        Xmlpars.WriteXmlNewValues();
+                    }
+                    //status_rtb.Clear();
+                    status_rtb.AppendText("*** Model updated ***\n");
+                    button1.Enabled = true;
                 }
-                //status_rtb.Clear();
-                status_rtb.AppendText("*** Model updated ***\n");
-                button1.Enabled = true;
+               
             }
             else
             {

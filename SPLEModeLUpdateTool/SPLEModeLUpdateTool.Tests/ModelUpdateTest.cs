@@ -2,6 +2,7 @@
 using SPLEModeLUpdateTool;
 using System;
 using System.Collections.Generic;
+using System.IO;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -14,7 +15,17 @@ namespace SPLEModeLUpdateTool.Tests
         [TestMethod()]
         public void Test_CreateModelTreeTest()
         {
-
+            if (File.Exists("txtfolder\\model_subtree_guncel.txt"))
+            {
+                Assert.IsTrue(true);
+            }
+            else
+            {
+                Assert.IsTrue(false);
+            }
+             
+          
+           
         }
     }
 }
