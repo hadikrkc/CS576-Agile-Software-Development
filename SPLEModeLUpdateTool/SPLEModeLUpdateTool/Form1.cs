@@ -73,7 +73,7 @@ namespace SPLEModeLUpdateTool
            
             if (status_rtb.Text.Contains("Feature tree imported") && status_rtb.Text.Contains("Model imported"))
             {
-                if (flag=true)
+                if (flag = true)
                 {
                     if (File.Exists("txtfolder\\model_subtree_guncel.txt"))
                         File.Delete("txtfolder\\model_subtree_guncel.txt");
@@ -88,6 +88,7 @@ namespace SPLEModeLUpdateTool
                     //status_rtb.Clear();
                     status_rtb.AppendText("*** Model updated ***\n");
                     button1.Enabled = true;
+                    openmatelo_btn.Visible = true;
                 }
                
             }
@@ -193,5 +194,6 @@ namespace SPLEModeLUpdateTool
         {
             System.Diagnostics.Process.Start("C:\\All4tec\\MaTeLo\\MaTeLo 5.4.1 Fourier S24\\Matelo.exe");    
         }
+
     }
 }

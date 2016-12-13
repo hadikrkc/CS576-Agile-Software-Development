@@ -15,17 +15,17 @@ namespace SPLEModeLUpdateTool.Tests
         public void Test_updatetreeviaFetureTest()
         {
             Boolean b;
-            b = FeatureProcess.updatetreeviaFeture("model_subtree.txt");//Path'i degistirin
+            b = FeatureProcess.updatetreeviaFeture("txtfolder\\model_subtree.txt");//Path'i degistirin
             Console.WriteLine(b);
-            if (b == true) { Assert.IsFalse(false); }
-            else { Assert.IsFalse(true); }
+            if (b == true) { Assert.IsFalse(true); }
+            else { Assert.IsFalse(false); }
         }
 
         [TestMethod()]
         public void Test_ConsistenceScheckTest()
         {
             Boolean b;
-            b = FeatureProcess.consistenceCheck("model_subtree.txt");//Path'i degistirin
+            b = FeatureProcess.consistenceCheck("txtfolder\\model_subtree.txt");//Path'i degistirin
             Console.WriteLine(b);
             if (b == true) { Assert.IsFalse(false); }
             else { Assert.IsFalse(true); }
