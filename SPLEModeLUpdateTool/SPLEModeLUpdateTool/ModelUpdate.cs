@@ -138,6 +138,7 @@ namespace SPLEModeLUpdateTool
                     {
                         string str = childandvalue[l].Split(',').ElementAt(0) + ',' + childandvalue[l].Split(',').ElementAt(1) + ',' + (1- Math.Round(lastvalue,3)).ToString();
                         childandvalue[l] = str;
+                        c = 0;
                     }
                     else
                     {
