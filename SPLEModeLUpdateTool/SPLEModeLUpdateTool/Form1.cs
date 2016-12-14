@@ -78,7 +78,8 @@ namespace SPLEModeLUpdateTool
                     if (File.Exists("txtfolder\\model_subtree_guncel.txt"))
                         File.Delete("txtfolder\\model_subtree_guncel.txt");
                     flag = FeatureProcess.updatetreeviaFeture(openfeaturemodel_tb.Text);
-                    ModelUpdate.updateModel();
+                    //ModelUpdate.updateModel();
+                    ModelUpdate.updateModel_new();
                     //bu kısım mcm den parse edilerek oluşturlan txt lerde value değerlerini güncelleyerek mcm'e tekrar yazdıracak.
                     foreach (ModelTree item in ModelUpdate.CreateModelTree())
                     {
