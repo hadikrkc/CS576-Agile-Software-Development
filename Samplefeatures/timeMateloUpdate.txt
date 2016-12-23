@@ -1,3 +1,20 @@
-700 sn update matelo model hadi
-650 sn update matelo model hadi
-680 sn update matelo model hadi
+1800 sn update matelo model hadi
+1750 sn update matelo model hadi
+1780 sn update matelo model hadi
+
+
+1900 sn update matelo model burcu
+1860 sn update matelo model burcu
+1650 sn update matelo model burcu
+
+1800 sn update matelo model ibrahim
+1860 sn update matelo model ibrahim
+1950 sn update matelo model ibrahim
+
+1890 sn update matelo model gönül
+2160 sn update matelo model gönül
+1850 sn update matelo model gönül
+
+2890 sn update matelo model hüseyin
+2160 sn update matelo model hüseyin
+2550 sn update matelo model hüseyin
